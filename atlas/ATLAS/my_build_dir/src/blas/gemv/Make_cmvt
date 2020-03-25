@@ -1,0 +1,54 @@
+#
+#  This file generated at line 274 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/mvthgen.c
+#
+include Make.inc
+
+MVTCC = $(SKC)
+MVTFLAGS = $(CDEFS) $(SKCFLAGS) -DSCPLX
+
+obj = ATL_cmvtk__900007.o ATL_cmvtk__900007_b0.o ATL_cmvtk__900008.o ATL_cmvtk__900008_b0.o ATL_cmvtk__2.o ATL_cmvtk__2_b0.o ATL_cmvtk__900003.o ATL_cmvtk__900003_b0.o ATL_cmvtk__3.o ATL_cmvtk__3_b0.o ATL_cmvtk__900005.o ATL_cmvtk__900005_b0.o ATL_cmvtk__900002.o ATL_cmvtk__900002_b0.o
+lib : clib
+clib : cmvtk.grd
+cmvtk.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch cmvtk.grd
+cclean : clean
+clean :
+	- rm -f $(obj) cmvtk.grd
+
+ckilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_cmvtk__900007.c ATL_cmvtk__900008.c ATL_cmvtk__2.c ATL_cmvtk__900003.c ATL_cmvtk__3.c ATL_cmvtk__900005.c ATL_cmvtk__900002.c
+
+ATL_cmvtk__900007.o : ATL_cmvtk__900007.c
+	 $(GOODGCC) -o ATL_cmvtk__900007.o -c -DATL_UGEMV=ATL_cmvtk__900007 -x assembler-with-cpp -DPFIX=prefetcht1 -DPFIY=prefetcht1 -DPFADIST=320 -DPFXDIST=896 -DPFYDIST=0 -DSCPLX $(CDEFS) ATL_cmvtk__900007.c
+ATL_cmvtk__900007_b0.o : ATL_cmvtk__900007.c
+	 $(GOODGCC) -o ATL_cmvtk__900007_b0.o -c -DATL_UGEMV=ATL_cmvtk__900007_b0 -DBETA0 -x assembler-with-cpp -DPFIX=prefetcht1 -DPFIY=prefetcht1 -DPFADIST=320 -DPFXDIST=896 -DPFYDIST=0 -DSCPLX $(CDEFS) ATL_cmvtk__900007.c
+ATL_cmvtk__900008.o : ATL_cmvtk__900008.c
+	 $(GOODGCC) -o ATL_cmvtk__900008.o -c -DATL_UGEMV=ATL_cmvtk__900008 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetchnta -DPFIY=prefetcht2 -DPFADIST=320 -DPFXDIST=384 -DPFYDIST=448 -DSCPLX $(CDEFS) ATL_cmvtk__900008.c
+ATL_cmvtk__900008_b0.o : ATL_cmvtk__900008.c
+	 $(GOODGCC) -o ATL_cmvtk__900008_b0.o -c -DATL_UGEMV=ATL_cmvtk__900008_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetchnta -DPFIY=prefetcht2 -DPFADIST=320 -DPFXDIST=384 -DPFYDIST=448 -DSCPLX $(CDEFS) ATL_cmvtk__900008.c
+ATL_cmvtk__2.o : ATL_cmvtk__2.c
+	 $(GOODGCC) -o ATL_cmvtk__2.o -c -DATL_UGEMV=ATL_cmvtk__2 -x assembler-with-cpp -DSCPLX $(CDEFS) ATL_cmvtk__2.c
+ATL_cmvtk__2_b0.o : ATL_cmvtk__2.c
+	 $(GOODGCC) -o ATL_cmvtk__2_b0.o -c -DATL_UGEMV=ATL_cmvtk__2_b0 -DBETA0 -x assembler-with-cpp -DSCPLX $(CDEFS) ATL_cmvtk__2.c
+ATL_cmvtk__900003.o : ATL_cmvtk__900003.c
+	 $(GOODGCC) -o ATL_cmvtk__900003.o -c -DATL_UGEMV=ATL_cmvtk__900003 -x assembler-with-cpp -DSCPLX $(CDEFS) ATL_cmvtk__900003.c
+ATL_cmvtk__900003_b0.o : ATL_cmvtk__900003.c
+	 $(GOODGCC) -o ATL_cmvtk__900003_b0.o -c -DATL_UGEMV=ATL_cmvtk__900003_b0 -DBETA0 -x assembler-with-cpp -DSCPLX $(CDEFS) ATL_cmvtk__900003.c
+ATL_cmvtk__3.o : ATL_cmvtk__3.c
+	 $(GOODGCC) -o ATL_cmvtk__3.o -c -DATL_UGEMV=ATL_cmvtk__3 -x assembler-with-cpp -DSCPLX $(CDEFS) ATL_cmvtk__3.c
+ATL_cmvtk__3_b0.o : ATL_cmvtk__3.c
+	 $(GOODGCC) -o ATL_cmvtk__3_b0.o -c -DATL_UGEMV=ATL_cmvtk__3_b0 -DBETA0 -x assembler-with-cpp -DSCPLX $(CDEFS) ATL_cmvtk__3.c
+ATL_cmvtk__900005.o : ATL_cmvtk__900005.c
+	 $(GOODGCC) -o ATL_cmvtk__900005.o -c -DATL_UGEMV=ATL_cmvtk__900005 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIY=prefetchnta -DPFADIST=0 -DPFYDIST=192 -DSCPLX $(CDEFS) ATL_cmvtk__900005.c
+ATL_cmvtk__900005_b0.o : ATL_cmvtk__900005.c
+	 $(GOODGCC) -o ATL_cmvtk__900005_b0.o -c -DATL_UGEMV=ATL_cmvtk__900005_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIY=prefetchnta -DPFADIST=0 -DPFYDIST=192 -DSCPLX $(CDEFS) ATL_cmvtk__900005.c
+ATL_cmvtk__900002.o : ATL_cmvtk__900002.c
+	 $(GOODGCC) -o ATL_cmvtk__900002.o -c -DATL_UGEMV=ATL_cmvtk__900002 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht0 -DPFIY=prefetcht0 -DPFADIST=192 -DPFXDIST=1280 -DPFYDIST=1984 -DSCPLX $(CDEFS) ATL_cmvtk__900002.c
+ATL_cmvtk__900002_b0.o : ATL_cmvtk__900002.c
+	 $(GOODGCC) -o ATL_cmvtk__900002_b0.o -c -DATL_UGEMV=ATL_cmvtk__900002_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht0 -DPFIY=prefetcht0 -DPFADIST=192 -DPFXDIST=1280 -DPFYDIST=1984 -DSCPLX $(CDEFS) ATL_cmvtk__900002.c

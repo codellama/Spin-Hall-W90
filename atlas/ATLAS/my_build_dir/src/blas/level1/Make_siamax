@@ -1,0 +1,19 @@
+include Make.inc
+
+obj = ATL_siamax.o ATL_siamax_xp1yp0aXbX.o ATL_siamax_xp0yp0aXbX.o
+
+all : lib
+slib : lib
+lib : siamax.grd
+
+siamax.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch siamax.grd
+
+ATL_siamax.o : ATL_siamax.c
+	$(ICC) $(ICCFLAGS) -DSREAL -o $@ -c ATL_siamax.c
+ATL_siamax_xp1yp0aXbX.o : ATL_siamax_xp1yp0aXbX.c
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 -x assembler-with-cpp $(CDEFS) -DSREAL -o $@ -c ATL_siamax_xp1yp0aXbX.c
+ATL_siamax_xp0yp0aXbX.o : ATL_siamax_xp0yp0aXbX.c
+	$(SKC) $(SKCFLAGS) $(CDEFS) -DSREAL -o $@ -c ATL_siamax_xp0yp0aXbX.c

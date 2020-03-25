@@ -1,0 +1,50 @@
+TACC: Starting up job 4356886
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.3.3 18Dez12 (build Oct 01 2014 18:44:37) complex                        
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       2 ions
+ WARNING: for PREC=h ENMAX is automatically increase by 25 %
+        this was not the case for versions prior to vasp.4.4
+ LDA part: xc-table for Pade appr. of Perdew
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      The number of bands has been changed from the values supplied          |
+|      in the INCAR file. This is a result of running the parallel version.   |
+|      The orbitals not found in the WAVECAR file will be initialized with    |
+|      random numbers, which is usually adequate. For correlated              |
+|      calculations, however, you should redo the groundstate calculation.    |
+|      I found NBANDS    =       10  now  NBANDS  =      12                   |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.146716187736E+00   -0.14672E+00   -0.43312E+03  1860   0.619E+02
+DAV:   2    -0.176278297101E+02   -0.17481E+02   -0.17033E+02  2188   0.124E+02
+DAV:   3    -0.178565333219E+02   -0.22870E+00   -0.22843E+00  1972   0.103E+01
+DAV:   4    -0.178566937980E+02   -0.16048E-03   -0.16048E-03  1876   0.350E-01
+DAV:   5    -0.178566938948E+02   -0.96793E-07   -0.96773E-07  1968   0.755E-03    0.808E+00
+DAV:   6    -0.168248484497E+02    0.10318E+01   -0.48973E-01  1772   0.506E+00    0.489E+00
+DAV:   7    -0.164812375573E+02    0.34361E+00   -0.56774E-01  1832   0.550E+00    0.135E+00
+DAV:   8    -0.164840133715E+02   -0.27758E-02   -0.14789E-02  1828   0.948E-01    0.565E-02
+DAV:   9    -0.164840202879E+02   -0.69164E-05   -0.53797E-05  1948   0.558E-02
+   1 F= -.16484020E+02 E0= -.16484020E+02  d E =0.000000E+00
+ 
+TACC: Shutdown complete. Exiting.

@@ -1,0 +1,6 @@
+ num_wann =  12   
+ num_bands = 12
+
+begin projections
+random
+end projections

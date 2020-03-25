@@ -1,0 +1,36 @@
+#
+#  This file generated at line 658 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/ger/r2hgen.c
+#
+include Make.inc
+
+R2CC = $(DKC)
+R2FLAGS = $(CDEFS) $(DKCFLAGS) -DDCPLX
+
+obj = ATL_zger2k__900003.o ATL_zger2k__900004.o ATL_zger2k__4.o ATL_zger2k__3.o ATL_zger2k__900002.o
+lib : zlib
+zlib : zr2k.grd
+zr2k.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch zr2k.grd
+zclean : clean
+clean :
+	- rm -f $(obj) zr2k.grd
+
+zkilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_zger2k__900003.c ATL_zger2k__900004.c ATL_zger2k__4.c ATL_zger2k__3.c ATL_zger2k__900002.c
+
+ATL_zger2k__900003.o : ATL_zger2k__900003.c
+	 $(GOODGCC) -o ATL_zger2k__900003.o -c -DATL_UGER2K=ATL_zger2k__900003 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht0 -DPFADIST=1856 -DPFXDIST=192 -DPFYDIST=256 -DDCPLX $(CDEFS) ATL_zger2k__900003.c
+ATL_zger2k__900004.o : ATL_zger2k__900004.c
+	 $(GOODGCC) -o ATL_zger2k__900004.o -c -DATL_UGER2K=ATL_zger2k__900004 -x assembler-with-cpp -DPFIA=prefetcht1 -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=384 -DPFXDIST=128 -DPFYDIST=128 -DDCPLX $(CDEFS) ATL_zger2k__900004.c
+ATL_zger2k__4.o : ATL_zger2k__4.c
+	 $(GOODGCC) -o ATL_zger2k__4.o -c -DATL_UGER2K=ATL_zger2k__4 -fomit-frame-pointer -mfpmath=sse -mavx -O2 -fno-schedule-insns2 -DDCPLX $(CDEFS) ATL_zger2k__4.c
+ATL_zger2k__3.o : ATL_zger2k__3.c
+	 $(GOODGCC) -o ATL_zger2k__3.o -c -DATL_UGER2K=ATL_zger2k__3 -fomit-frame-pointer -mfpmath=sse -msse3 -O2 -DDCPLX $(CDEFS) ATL_zger2k__3.c
+ATL_zger2k__900002.o : ATL_zger2k__900002.c
+	 $(GOODGCC) -o ATL_zger2k__900002.o -c -DATL_UGER2K=ATL_zger2k__900002 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetchnta -DPFIY=prefetchnta -DPFXDIST=0 -DPFYDIST=256 -DDCPLX $(CDEFS) ATL_zger2k__900002.c

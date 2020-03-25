@@ -1,0 +1,163 @@
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*       BEGAN ATLAS3.10.2 INSTALL OF SECTION 2-4-7 ON 09/28/2014 AT 16:52     *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
+make[2]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv ; make res/cMVNK.sum pre=c
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+./xmvnksearch -p c
+
+      Read in L1 Cache size as = 32KB.
+   2:ATL_cgemvN_8x4_sse3.c (M=2300, N=2000, lda=2308) gets 7364.23 MFLOPS
+   900002:cmvn_sse.c (M=2300, N=2000, lda=2303) gets 12275.36 MFLOPS
+   900009:cmvn_sse.c (M=910, N=18, lda=918) gets 3276.00 MFLOPS
+   2:ATL_cgemvN_8x4_sse3.c (M=1024, N=16, lda=1032) gets 6586.37 MFLOPS
+   900003:cmvn_sse.c (M=1024, N=16, lda=1032) gets 6586.37 MFLOPS
+   900008:cmvn_sse.c (M=910, N=18, lda=917) gets 13104.00 MFLOPS
+   900009:cmvn_sse.c (M=290, N=12, lda=298) gets 6270.96 MFLOPS
+   2:ATL_cgemvN_8x4_sse3.c (M=435, N=8, lda=444) gets 6333.60 MFLOPS
+   900003:cmvn_sse.c (M=435, N=8, lda=444) gets 3169.97 MFLOPS
+   900005:cmvn_sse.c (M=290, N=12, lda=294) gets 12541.92 MFLOPS
+   900002:cmvn_sse.c (M=2300, N=2000, lda=2303) gets 12275.36 MFLOPS
+ID=2 ROUT='ATL_cgemvN_8x4_sse3.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__2' \
+   rankR=1 CacheElts=24576 SSE=3 alignA=8 alignY=16 alignX=0 minM=9 minN=4  \
+   NU=4 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=1 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=7.364233e+03,-1.527069e+04 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=256 -DPFXDIST=0 -DPFYDIST=128' \
+     COMP='gcc'
+ID=900002 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900002' \
+   rankR=0 CacheElts=24576 SSE=3 alignA=0 alignY=16 alignX=16 minM=8 minN=2  \
+   NU=2 MU=8 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=1.227536e+04,-1.444380e+04  ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIX=prefetchnta -DPFADIST=512 -DPFXDIST=384 -DPFYDIST=128' \
+     COMP='gcc'
+ID=900009 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900009' \
+   rankR=3 CacheElts=24576 SSE=3 alignA=16 alignY=16 alignX=16 minM=8 minN=6  \
+   NU=6 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-1.087412e+04,-1.361709e+04,0.000000e+00,3.276000e+03,-2.552589e+04 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetcht2 -DPFIY=prefetcht2 -DPFADIST=0 -DPFXDIST=1344 -DPFYDIST=320' \
+     COMP='gcc'
+ID=2 ROUT='ATL_cgemvN_8x4_sse3.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__2' \
+   rankR=2 CacheElts=24576 SSE=3 alignA=8 alignY=16 alignX=0 minM=9 minN=4  \
+   NU=4 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=1 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-1.160000e+04,-1.495030e+04,0.000000e+00,6.586368e+03,-2.651895e+04 \
+     CFLAGS='-x assembler-with-cpp'  COMP='gcc'
+ID=900003 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900003' \
+   rankR=1 CacheElts=24576 SSE=3 alignA=16 alignY=16 alignX=16 minM=8 minN=2  \
+   NU=2 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-1.165862e+04,-1.442216e+04,0.000000e+00,6.586368e+03,-2.298623e+04 \
+     ASM=GAS_x8664  CFLAGS='-x assembler-with-cpp'  COMP='gcc'
+ID=900008 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900008' \
+   rankR=0 CacheElts=24576 SSE=3 alignA=0 alignY=16 alignX=16 minM=8 minN=6  \
+   NU=6 MU=8 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=0.000000e+00,0.000000e+00,0.000000e+00,1.310400e+04,-2.175000e+04 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht2 -DPFIX=prefetchnta -DPFADIST=0 -DPFYDIST=128' \
+     COMP='gcc'
+ID=900009 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900009' \
+   rankR=3 CacheElts=4014 SSE=3 alignA=16 alignY=16 alignX=16 minM=8 minN=6  \
+   NU=6 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-1.087412e+04,-1.361709e+04,0.000000e+00,-2.162225e+04,6.270960e+03 \
+     ASM=GAS_x8664  CFLAGS='-x assembler-with-cpp'  COMP='gcc'
+ID=2 ROUT='ATL_cgemvN_8x4_sse3.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__2' \
+   rankR=2 CacheElts=4014 SSE=3 alignA=8 alignY=16 alignX=0 minM=9 minN=4  \
+   NU=4 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=1 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-1.160000e+04,-1.495030e+04,0.000000e+00,0.000000e+00,6.333600e+03 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht1 -DPFADIST=0 -DPFXDIST=512 -DPFYDIST=448' \
+     COMP='gcc'
+ID=900003 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900003' \
+   rankR=1 CacheElts=4014 SSE=3 alignA=16 alignY=16 alignX=16 minM=8 minN=2  \
+   NU=2 MU=8 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-1.165862e+04,-1.442216e+04,0.000000e+00,0.000000e+00,3.169970e+03 \
+     ASM=GAS_x8664  CFLAGS='-x assembler-with-cpp'  COMP='gcc'
+ID=900005 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900005' \
+   rankR=0 CacheElts=4014 SSE=3 alignA=0 alignY=16 alignX=16 minM=16 minN=6  \
+   NU=6 MU=16 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,1.254192e+04 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetcht1 -DPFADIST=0 -DPFYDIST=512' \
+     COMP='gcc'
+ID=900002 ROUT='cmvn_sse.c' AUTH='R. Clint Whaley' TA='N' KNAME='ATL_cmvnk__900002' \
+   rankR=0 CacheElts=4014 SSE=3 alignA=0 alignY=16 alignX=16 minM=8 minN=2  \
+   NU=2 MU=8 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=1  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=1.227536e+04,-1.414349e+04  ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIX=prefetcht0 -DPFXDIST=128 -DPFYDIST=128' \
+     COMP='gcc'
+make cmvninstall
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+mkdir cmvnoutd
+rm -f cmvnoutd/*
+if [ -s "/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/Make_cmvn" ]; then \
+           cd  /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv ; make -f Make_cmvn killall ; \
+           rm -f /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/Make_cmvn ; \
+        fi
+./xmvnhgen -p c -F res/cMVNK.sum -d cmvnoutd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvn_sse nu=2 type=SCPLX -def MU 1 \
+                            -o EXTDIR/cmvn_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvn_sse nu=6 type=SCPLX -def MU 1 \
+                           -def ALIGNED 1 -o EXTDIR/cmvn_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvn_sse nu=2 type=SCPLX -def MU 1 \
+                           -def ALIGNED 1 -o EXTDIR/cmvn_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvn_sse nu=6 type=SCPLX -def MU 1 \
+                            -o EXTDIR/cmvn_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvn_sse nu=6 type=SCPLX -def MU 2 \
+                            -o EXTDIR/cmvn_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+cp -f cmvnoutd/Make_cmvn /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/.
+cp cmvnoutd/*.c /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/.
+cp -f cmvnoutd/*.h /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/.
+if [ -s "xccobj.exe" ] ; then \
+	   cp -f xccobj.exe /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/. ; \
+	elif [ -s "xccobj" ]; then \
+           cp -f xccobj /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/. ; \
+        fi
+touch /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//include/atlas_mv.h
+rm -f cmvnoutd/* ; rmdir cmvnoutd
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+cp /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv/res/cMVNK.sum INSTALL_LOG/.
+make[2]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*      FINISHED ATLAS3.10.2 INSTALL OF SECTION 2-4-7 ON 09/28/2014 AT 16:52   *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+

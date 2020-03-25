@@ -1,0 +1,1282 @@
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*       BEGAN ATLAS3.10.2 INSTALL OF SECTION 5-1-1 ON 09/28/2014 AT 16:55     *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
+make[2]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[3]: Nothing to be done for `lib'.
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib dcleanuplib dusergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f dMakefile dlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `dlib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `dusergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib scleanuplib susergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f sMakefile slib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `slib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `susergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib zcleanuplib zusergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f zMakefile zlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `zlib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `zusergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib ccleanuplib cusergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f cMakefile clib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `clib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `cusergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_smvt slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `slib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_smvn slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `slib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_dmvt dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `dlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_dmvn dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `dlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_cmvt clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `clib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_cmvn clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `clib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_zmvt zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `zlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 -f Make_zmvn zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: Nothing to be done for `zlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_sr1 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_sr2 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_dr1 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_dr2 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_cr1 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_cr2 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_zr1 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make -j 16 -f Make_zr2 lib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[4]: Nothing to be done for `lib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/ger'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1 ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make dgen
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_drot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_drot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_drot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_daxpby
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_daxpby' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_daxpby lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dcpsc
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dcpsc' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dcpsc lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dset
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dset' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dset lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dnrm2
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dnrm2' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dnrm2 lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dasum
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dasum' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dasum lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_ddot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_ddot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_ddot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dswap
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dswap' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dswap lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dscal
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dscal' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dscal lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_dcopy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_dcopy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_dcopy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_daxpy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_daxpy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_daxpy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_diamax
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_diamax' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_diamax lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make sgen
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_srot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_srot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_srot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_saxpby
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_saxpby' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_saxpby lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_scpsc
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_scpsc' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_scpsc lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_sset
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_sset' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_sset lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_snrm2
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_snrm2' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_snrm2 lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_sasum
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_sasum' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_sasum lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_sdot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_sdot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_sdot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_sswap
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_sswap' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_sswap lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_sscal
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_sscal' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_sscal lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_scopy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_scopy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_scopy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_saxpy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_saxpy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_saxpy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_siamax
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_siamax' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_siamax lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make zgen
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zrot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zrot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zrot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zaxpby
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zaxpby' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zaxpby lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zcpsc
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zcpsc' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zcpsc lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zset
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zset' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zset lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_znrm2
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_znrm2' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_znrm2 lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zasum
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zasum' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zasum lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zdot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zdot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zdot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zswap
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zswap' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zswap lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zscal
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zscal' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zscal lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zcopy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zcopy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zcopy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zaxpy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zaxpy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zaxpy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_ziamax
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_ziamax' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_ziamax lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_zdotc
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_zdotc' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_zdotc lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make cgen
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_crot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_crot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_crot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_caxpby
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_caxpby' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_caxpby lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_ccpsc
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_ccpsc' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_ccpsc lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_cset
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_cset' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_cset lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_cnrm2
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_cnrm2' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_cnrm2 lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_casum
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_casum' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_casum lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_cdot
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_cdot' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_cdot lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_cswap
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_cswap' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_cswap lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_cscal
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_cscal' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_cscal lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_ccopy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_ccopy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_ccopy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_caxpy
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_caxpy' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_caxpy lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_ciamax
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_ciamax' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_ciamax lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make Make_cdotc
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: `Make_cdotc' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -f Make_cdotc lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level1'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level2 ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level2'
+make[3]: Nothing to be done for `lib'.
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level2'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3 ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+( cd kernel; make slib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make -j 16 slib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[5]: `slib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make sl3ref
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3 ; make slib
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[6]: Nothing to be done for `slib'.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+( cd rblas;  make slib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+make[4]: Nothing to be done for `slib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+cd ../pklevel3 ; make slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+cd gpmm ; make slib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 slib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[6]: `slib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make slib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 slib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[6]: `slib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+make -j 16 sblas3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+make[4]: `sblas3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+( cd kernel; make dlib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make -j 16 dlib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[5]: `dlib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make dl3ref
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3 ; make dlib
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[6]: Nothing to be done for `dlib'.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+( cd rblas;  make dlib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+make[4]: Nothing to be done for `dlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+cd ../pklevel3 ; make dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+cd gpmm ; make dlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 dlib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[6]: `dlib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make dlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 dlib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[6]: `dlib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+make -j 16 dblas3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+make[4]: `dblas3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+( cd kernel; make clib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make -j 16 clib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[5]: `clib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make cl3ref
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3 ; make clib
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[6]: Nothing to be done for `clib'.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+( cd rblas;  make clib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+make[4]: Nothing to be done for `clib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+cd ../pklevel3 ; make clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+cd gpmm ; make clib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 clib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[6]: `clib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make clib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 clib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[6]: `clib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+make -j 16 cblas3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+make[4]: `cblas3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+( cd kernel; make zlib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make -j 16 zlib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[5]: `zlib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make zl3ref
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3 ; make zlib
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[6]: Nothing to be done for `zlib'.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/kernel'
+( cd rblas;  make zlib )
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+make[4]: Nothing to be done for `zlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3/rblas'
+cd ../pklevel3 ; make zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+cd gpmm ; make zlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 zlib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[6]: `zlib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make zlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 zlib.grd
+make[6]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[6]: `zlib.grd' is up to date.
+make[6]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+make -j 16 zblas3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+make[4]: `zblas3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/level3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3 ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+cd gpmm ; make dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 dlib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: `dlib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 dlib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: `dlib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+cd gpmm ; make slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 slib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: `slib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 slib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: `slib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+cd gpmm ; make zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 zlib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: `zlib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 zlib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: `zlib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+cd gpmm ; make clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make -j 16 clib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[5]: `clib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/gpmm'
+cd sprk ; make clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make -j 16 clib.grd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[5]: `clib.grd' is up to date.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3/sprk'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/pklevel3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/f77reference ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/f77reference'
+ar r /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a dcabs1.o dzasum.o dznrm2.o izamax.o zaxpy.o zcopy.o zdotc.o zdotu.o zdrot.o zdscal.o zgbmv.o zgemm.o zgemv.o zgerc.o zgeru.o zhbmv.o zhemm.o zhemv.o zher.o zher2.o zher2k.o zherk.o zhpmv.o zhpr.o zhpr2.o zrotg.o zscal.o zswap.o zsymm.o zsyr2k.o zsyrk.o ztbmv.o ztbsv.o ztpmv.o ztpsv.o ztrmm.o ztrmv.o ztrsm.o ztrsv.o
+echo /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+ar r /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a caxpy.o ccopy.o cdotc.o cdotu.o cgbmv.o cgemm.o cgemv.o cgerc.o cgeru.o chbmv.o chemm.o chemv.o cher.o cher2.o cher2k.o cherk.o chpmv.o chpr.o chpr2.o crotg.o cscal.o csrot.o csscal.o cswap.o csymm.o csyr2k.o csyrk.o ctbmv.o ctbsv.o ctpmv.o ctpsv.o ctrmm.o ctrmv.o ctrsm.o ctrsv.o icamax.o scabs1.o scasum.o scnrm2.o
+echo /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+ar r /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a dasum.o daxpy.o dcopy.o ddot.o dgbmv.o dgemm.o dgemv.o dger.o dnrm2.o drot.o drotg.o drotm.o drotmg.o dsbmv.o dscal.o dsdot.o dspmv.o dspr.o dspr2.o dswap.o dsymm.o dsymv.o dsyr.o dsyr2.o dsyr2k.o dsyrk.o dtbmv.o dtbsv.o dtpmv.o dtpsv.o dtrmm.o dtrmv.o dtrsm.o dtrsv.o idamax.o
+echo /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+ar r /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a isamax.o sasum.o saxpy.o scopy.o sdot.o sdsdot.o sgbmv.o sgemm.o sgemv.o sger.o snrm2.o srot.o srotg.o srotm.o srotmg.o ssbmv.o sscal.o sspmv.o sspr.o sspr2.o sswap.o ssymm.o ssymv.o ssyr.o ssyr2.o ssyr2k.o ssyrk.o stbmv.o stbsv.o stpmv.o stpsv.o strmm.o strmv.o strsm.o strsv.o
+echo /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+ar r /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a lsame.o xerbla.o
+echo /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/libf77refblas.a
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/f77reference'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3 ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+make[3]: Nothing to be done for `lib'.
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/reference/level3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src ; make all
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 dlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `dlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 dlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `dlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 dlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `dlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 slvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `slvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 slvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `slvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 slvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `slvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 zlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `zlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 zlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `zlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 zlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `zlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 clvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `clvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 clvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `clvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 clvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `clvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 slvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `slvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 slvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `slvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 slvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `slvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 dlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `dlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 dlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `dlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 dlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `dlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 clvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `clvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 clvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `clvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 clvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `clvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 zlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `zlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 zlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `zlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 zlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `zlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make -j 16 ilib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make[4]: `ilib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C/src'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/F77/src ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/F77/src'
+make[3]: Nothing to be done for `lib'.
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/F77/src'
+if [ -d "/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack/reference" ]; then \
+	   cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/lapack/C2F/src ; make lib ; \
+        fi
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil/ ; make ptlib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[3]: Nothing to be done for `ptlib'.
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib dcleanuplib dusergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f dMakefile dlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `dlib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `dusergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 dlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `dlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib scleanuplib susergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f sMakefile slib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `slib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `susergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 slib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `slib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib zcleanuplib zusergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f zMakefile zlib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `zlib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `zusergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 zlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `zlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make auxillib ccleanuplib cusergemm
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil ; make lib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+make[5]: Nothing to be done for `lib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/auxil'
+cd KERNEL ; make -f cMakefile clib
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[5]: Nothing to be done for `clib'.
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm/KERNEL'
+make[4]: Nothing to be done for `cusergemm'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make -j 16 clib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: `clib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/ ; make lib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads'
+cd blas/level3 ; make dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+make[4]: Nothing to be done for `dlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm ; make dtlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: Nothing to be done for `dtlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd blas/level3 ; make zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+make[4]: Nothing to be done for `zlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm ; make ztlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: Nothing to be done for `ztlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd blas/level3 ; make clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+make[4]: Nothing to be done for `clib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm ; make ctlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: Nothing to be done for `ctlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd blas/level3 ; make slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+make[4]: Nothing to be done for `slib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level3'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm ; make stlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+make[4]: Nothing to be done for `stlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemm'
+cd blas/level2 ; make dlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+make[4]: Nothing to be done for `dlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+cd blas/level2 ; make zlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+make[4]: Nothing to be done for `zlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+cd blas/level2 ; make clib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+make[4]: Nothing to be done for `clib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+cd blas/level2 ; make slib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+make[4]: Nothing to be done for `slib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/blas/level2'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src/ ; make ptlib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 dptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `dptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 dptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `dptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 dptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `dptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 sptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `sptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 sptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `sptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 sptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `sptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 zptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `zptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 zptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `zptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 zptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `zptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 cptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `cptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 cptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `cptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make -j 16 cptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[4]: `cptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/C/src'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src/ ; make ptlib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 sptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `sptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 sptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `sptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 sptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `sptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 dptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `dptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 dptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `dptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 dptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `dptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 cptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `cptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 cptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `cptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 cptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `cptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 zptlvl1.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `zptlvl1.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 zptlvl2.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `zptlvl2.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make -j 16 zptlvl3.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[4]: `zptlvl3.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/interfaces/blas/F77/src'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack ; make ptlib
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make -j 16 dtlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `dtlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack ; make -j 16 dtlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make[4]: Nothing to be done for `dtlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make -j 16 stlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `stlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack ; make -j 16 stlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make[4]: Nothing to be done for `stlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make -j 16 ztlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `ztlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack ; make -j 16 ztlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make[4]: Nothing to be done for `ztlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make -j 16 ctlib.grd
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[4]: `ctlib.grd' is up to date.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack ; make -j 16 ctlib
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make[4]: Nothing to be done for `ctlib'.
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/threads/lapack'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/lapack'
+make[2]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*      FINISHED ATLAS3.10.2 INSTALL OF SECTION 5-1-1 ON 09/28/2014 AT 16:55   *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+

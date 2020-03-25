@@ -1,0 +1,20 @@
+Diamond self consistent
+
+   ISTART =   1
+   ICHARG =   0
+   PREC   =  high
+
+ Electronic Relaxation
+   NELM   =  50
+   NELMIN = 5
+   EDIFF  =  1E-05
+
+#   ADDGRID = T
+   ISMEAR = -5
+   ALGO = Normal
+   LREAL= .FALSE.
+
+   NBANDS = 8
+
+   LWANNIER90 = .TRUE.
+   LWRITE_MMN_AMN = .TRUE.

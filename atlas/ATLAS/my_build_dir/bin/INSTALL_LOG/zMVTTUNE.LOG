@@ -1,0 +1,137 @@
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*       BEGAN ATLAS3.10.2 INSTALL OF SECTION 2-3-7 ON 09/28/2014 AT 16:50     *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
+make[2]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv ; make res/zMVTK.sum pre=z
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+./xmvtksearch -p z
+
+      Read in L1 Cache size as = 32KB.
+   900002:zmvt_sse.c (M=2300, N=1000, lda=2303) gets 3683.50 MFLOPS
+   900006:zmvt_sse.c (M=409, N=20, lda=417) gets 6246.25 MFLOPS
+   900003:zmvt_sse.c (M=512, N=16, lda=520) gets 6311.94 MFLOPS
+   900005:zmvt_sse.c (M=409, N=20, lda=413) gets 6246.25 MFLOPS
+   900006:zmvt_sse.c (M=174, N=10, lda=182) gets 3112.51 MFLOPS
+   900003:zmvt_sse.c (M=217, N=8, lda=225) gets 3129.14 MFLOPS
+   900005:zmvt_sse.c (M=174, N=10, lda=182) gets 3112.51 MFLOPS
+   900002:zmvt_sse.c (M=2300, N=1000, lda=2303) gets 2630.92 MFLOPS
+ID=900002 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900002' \
+   rankR=0 CacheElts=12288 SSE=3 alignA=0 alignY=16 alignX=16 minM=4 minN=4  \
+   NU=4 MU=4 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=3.683497e+03,-6.956900e+03  ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht0 -DPFIY=prefetcht2 -DPFADIST=256 -DPFXDIST=320 -DPFYDIST=128' \
+     COMP='gcc'
+ID=900006 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900006' \
+   rankR=2 CacheElts=12288 SSE=3 alignA=16 alignY=16 alignX=16 minM=4 minN=5  \
+   NU=5 MU=4 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-5.321904e+03,-6.909472e+03,0.000000e+00,6.246248e+03,-1.366208e+04 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht2 -DPFADIST=128 -DPFXDIST=512 -DPFYDIST=0' \
+     COMP='gcc'
+ID=900003 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900003' \
+   rankR=1 CacheElts=12288 SSE=3 alignA=16 alignY=16 alignX=16 minM=4 minN=4  \
+   NU=4 MU=4 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-5.420175e+03,-6.952033e+03,0.000000e+00,6.311936e+03,-1.377962e+04 \
+     ASM=GAS_x8664  CFLAGS='-x assembler-with-cpp'  COMP='gcc'
+ID=900005 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900005' \
+   rankR=0 CacheElts=12288 SSE=3 alignA=0 alignY=16 alignX=16 minM=4 minN=5  \
+   NU=5 MU=4 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=0.000000e+00,0.000000e+00,0.000000e+00,6.246248e+03,-1.150036e+04 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetchnta -DPFIY=prefetchnta -DPFADIST=128 -DPFXDIST=128 -DPFYDIST=128' \
+     COMP='gcc'
+ID=900006 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900006' \
+   rankR=2 CacheElts=1187 SSE=3 alignA=16 alignY=16 alignX=16 minM=4 minN=5  \
+   NU=5 MU=4 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-5.321904e+03,-6.909472e+03,0.000000e+00,0.000000e+00,3.112512e+03 \
+     ASM=GAS_x8664  CFLAGS='-x assembler-with-cpp'  COMP='gcc'
+ID=900003 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900003' \
+   rankR=1 CacheElts=1187 SSE=3 alignA=16 alignY=16 alignX=16 minM=4 minN=4  \
+   NU=4 MU=4 LDAMUL=16 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=-5.420175e+03,-6.952033e+03,0.000000e+00,0.000000e+00,3.129140e+03 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIX=prefetchnta -DPFIY=prefetchnta -DPFADIST=0 -DPFXDIST=256 -DPFYDIST=128' \
+     COMP='gcc'
+ID=900005 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900005' \
+   rankR=0 CacheElts=1187 SSE=3 alignA=0 alignY=16 alignX=16 minM=4 minN=5  \
+   NU=5 MU=4 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,3.112512e+03 \
+     ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIX=prefetcht1 -DPFIY=prefetcht2 -DPFADIST=128 -DPFXDIST=256 -DPFYDIST=192' \
+     COMP='gcc'
+ID=900002 ROUT='zmvt_sse.c' AUTH='R. Clint Whaley' TA='T' KNAME='ATL_zmvtk__900002' \
+   rankR=0 CacheElts=1187 SSE=3 alignA=0 alignY=16 alignX=16 minM=4 minN=4  \
+   NU=4 MU=4 LDAMUL=0 PFTUNABLE=1 ALIGNX2A=0 ADDCFLAGS=0 GEMMBASED=0 AXPYBASED=0  \
+   ALLALIGNXY=0 LDYTOP=0 FNU=1 X87=0  \
+   MFLOP=2.630919e+03,-6.678393e+03  ASM=GAS_x8664 \
+     CFLAGS='-x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetchnta -DPFXDIST=320 -DPFYDIST=128' \
+     COMP='gcc'
+make zmvtinstall
+make[4]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+mkdir zmvtoutd
+rm -f zmvtoutd/*
+if [ -s "/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/Make_zmvt" ]; then \
+           cd  /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv ; make -f Make_zmvt killall ; \
+           rm -f /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/Make_zmvt ; \
+        fi
+./xmvthgen -p z -F res/zMVTK.sum -d zmvtoutd
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvt_sse nu=4 type=DCPLX -def MU 1 \
+                            -o EXTDIR/zmvt_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvt_sse nu=5 type=DCPLX -def MU 1 \
+                           -def ALIGNED 1 -o EXTDIR/zmvt_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvt_sse nu=4 type=DCPLX -def MU 1 \
+                           -def ALIGNED 1 -o EXTDIR/zmvt_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[5]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin/xextract -b /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/atlas-l2g.base order=clmajor \
+                           rout=mvt_sse nu=5 type=DCPLX -def MU 1 \
+                            -o EXTDIR/zmvt_sse.c
+make[5]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+cp -f zmvtoutd/Make_zmvt /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/.
+cp zmvtoutd/*.c /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/.
+cp -f zmvtoutd/*.h /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/.
+if [ -s "xccobj.exe" ] ; then \
+	   cp -f xccobj.exe /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/. ; \
+	elif [ -s "xccobj" ]; then \
+           cp -f xccobj /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/src/blas/gemv/. ; \
+        fi
+touch /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//include/atlas_mv.h
+rm -f zmvtoutd/* ; rmdir zmvtoutd
+make[4]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv'
+cp /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemv/res/zMVTK.sum INSTALL_LOG/.
+make[2]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*      FINISHED ATLAS3.10.2 INSTALL OF SECTION 2-3-7 ON 09/28/2014 AT 16:50   *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+

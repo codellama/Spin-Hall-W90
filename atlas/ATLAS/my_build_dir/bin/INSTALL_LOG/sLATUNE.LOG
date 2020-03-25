@@ -1,0 +1,40 @@
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*       BEGAN ATLAS3.10.2 INSTALL OF SECTION 4-3-2 ON 09/28/2014 AT 16:55     *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
+make[2]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+if [ -s "/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/atlas_sGetNB_geqrf.h" ]; then \
+           echo "Arch Defaults allow us to skip tuning" ; \
+        else \
+	    cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/lapack ; make res/ATL_sGetNB_geqrf.h ; \
+	    cp /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/lapack/res/ATL_sGetNB_geqrf.h \
+               /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/atlas_sGetNB_geqrf.h ; \
+        fi
+Arch Defaults allow us to skip tuning
+if [ -s "/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/atlas_stGetNB_geqrf.h" ]; then \
+           echo "Arch Defaults allow us to skip threaded tuning" ; \
+        elif [ -s "/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/atlas_pthreads.h" ]; then \
+	    cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/lapack ; make res/ATL_stGetNB_geqrf.h ; \
+	    cp /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/lapack/res/ATL_stGetNB_geqrf.h \
+               /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/atlas_stGetNB_geqrf.h ; \
+        fi
+Arch Defaults allow us to skip threaded tuning
+make[2]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*      FINISHED ATLAS3.10.2 INSTALL OF SECTION 4-3-2 ON 09/28/2014 AT 16:55   *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+

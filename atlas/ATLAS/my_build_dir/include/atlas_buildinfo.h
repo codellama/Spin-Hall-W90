@@ -1,0 +1,31 @@
+#ifndef ATL_INSTINFO_H
+   #define ATL_INSTINFO_H
+
+#define ATL_ARCH "Corei264AVX"
+#define ATL_INSTFLAGS "-1 0 -a 1 -l 1"
+#define ATL_F2CDEFS "-DAdd_ -DF77_INTEGER=int -DStringSunStyle"
+#define ATL_ARCHDEFS "-DATL_OS_Linux -DATL_ARCH_Corei2 -DATL_CPUMHZ=2700 -DATL_AVX -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_USE64BITS -DATL_GAS_x8664"
+#define ATL_DKCFLAGS "-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64"
+#define ATL_DKC "/usr/bin/x86_64-redhat-linux-gcc"
+#define ATL_SKCFLAGS "-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64"
+#define ATL_SKC "/usr/bin/x86_64-redhat-linux-gcc"
+#define ATL_DMCFLAGS "-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64"
+#define ATL_DMC "/usr/bin/x86_64-redhat-linux-gcc"
+#define ATL_SMCFLAGS "-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64"
+#define ATL_SMC "/usr/bin/x86_64-redhat-linux-gcc"
+#define ATL_ICCFLAGS "-DL2SIZE=4194304 -I/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include -I/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//include -I/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_Linux -DATL_ARCH_Corei2 -DATL_CPUMHZ=2700 -DATL_AVX -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_USE64BITS -DATL_GAS_x8664 -m64 -DATL_NCPU=16 -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64"
+#define ATL_ICC "/usr/bin/x86_64-redhat-linux-gcc"
+#define ATL_F77FLAGS "-O -mavx -m64"
+#define ATL_F77 "/usr/bin/gfortran"
+#define ATL_DKCVERS "x86_64-redhat-linux-gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)"
+#define ATL_SKCVERS "x86_64-redhat-linux-gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)"
+#define ATL_DMCVERS "x86_64-redhat-linux-gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)"
+#define ATL_SMCVERS "x86_64-redhat-linux-gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)"
+#define ATL_ICCVERS "x86_64-redhat-linux-gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)"
+#define ATL_F77VERS "GNU Fortran (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)"
+#define ATL_SYSINFO "Linux login2.stampede.tacc.utexas.edu 2.6.32-431.17.1.el6.x86_64 #1 SMP Wed May 7 23:32:49 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+#define ATL_DATE    "Sun Sep 28 16:43:39 CDT 2014"
+#define ATL_UNAM    "priyaj"
+#define ATL_VERS    "3.10.2"
+
+#endif

@@ -1,0 +1,9 @@
+ num_wann =    4  
+ num_bands = 12
+
+begin projections
+f=0.0,0.0,0.0:s
+f=0.0,0.0,0.5:s
+f=0.0,0.5,0.0:s
+f=0.5,0.0,0.0:s
+end projections

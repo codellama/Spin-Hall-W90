@@ -1,0 +1,30 @@
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*       BEGAN ATLAS3.10.2 INSTALL OF SECTION 2-1-2 ON 09/28/2014 AT 16:45     *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
+make[2]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+cd /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemm ; make res/atlas_cacheedge.h pre=d
+make[3]: Entering directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemm'
+make[3]: `res/atlas_cacheedge.h' is up to date.
+make[3]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemm'
+cp /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemm/res/atlas_cacheedge.h /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/include/.
+cp /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/tune/blas/gemm/res/atlas_cacheedge.h INSTALL_LOG/.
+make[2]: Leaving directory `/work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/bin'
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*      FINISHED ATLAS3.10.2 INSTALL OF SECTION 2-1-2 ON 09/28/2014 AT 16:45   *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+

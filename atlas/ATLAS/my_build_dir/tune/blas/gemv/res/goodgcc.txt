@@ -1,0 +1,1 @@
+'/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64'

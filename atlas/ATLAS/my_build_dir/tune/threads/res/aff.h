@@ -1,0 +1,1 @@
+#define ATL_TAFFINITY 1

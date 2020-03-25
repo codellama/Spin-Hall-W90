@@ -1,0 +1,46 @@
+#
+#  This file generated at line 270 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/mvnhgen.c
+#
+include Make.inc
+
+MVNCC = $(SKC)
+MVNFLAGS = $(CDEFS) $(SKCFLAGS) -DSREAL
+
+obj = ATL_smvnk__900002.o ATL_smvnk__900002_b0.o ATL_smvnk__900006.o ATL_smvnk__900006_b0.o ATL_smvnk__900003.o ATL_smvnk__900003_b0.o ATL_smvnk__900005.o ATL_smvnk__900005_b0.o ATL_smvnk__2.o ATL_smvnk__2_b0.o
+lib : slib
+slib : smvnk.grd
+smvnk.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch smvnk.grd
+sclean : clean
+clean :
+	- rm -f $(obj) smvnk.grd
+
+skilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_smvnk__900002.c ATL_smvnk__900006.c ATL_smvnk__900003.c ATL_smvnk__900005.c ATL_smvnk__2.c
+
+ATL_smvnk__900002.o : ATL_smvnk__900002.c
+	 $(GOODGCC) -o ATL_smvnk__900002.o -c -DATL_UGEMV=ATL_smvnk__900002 -x assembler-with-cpp -DPFIX=prefetcht0 -DPFIY=prefetcht0 -DPFADIST=512 -DPFXDIST=0 -DPFYDIST=0 -DSREAL $(CDEFS) ATL_smvnk__900002.c
+ATL_smvnk__900002_b0.o : ATL_smvnk__900002.c
+	 $(GOODGCC) -o ATL_smvnk__900002_b0.o -c -DATL_UGEMV=ATL_smvnk__900002_b0 -DBETA0 -x assembler-with-cpp -DPFIX=prefetcht0 -DPFIY=prefetcht0 -DPFADIST=512 -DPFXDIST=0 -DPFYDIST=0 -DSREAL $(CDEFS) ATL_smvnk__900002.c
+ATL_smvnk__900006.o : ATL_smvnk__900006.c
+	 $(GOODGCC) -o ATL_smvnk__900006.o -c -DATL_UGEMV=ATL_smvnk__900006 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht1 -DPFADIST=192 -DPFXDIST=0 -DPFYDIST=0 -DSREAL $(CDEFS) ATL_smvnk__900006.c
+ATL_smvnk__900006_b0.o : ATL_smvnk__900006.c
+	 $(GOODGCC) -o ATL_smvnk__900006_b0.o -c -DATL_UGEMV=ATL_smvnk__900006_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht1 -DPFADIST=192 -DPFXDIST=0 -DPFYDIST=0 -DSREAL $(CDEFS) ATL_smvnk__900006.c
+ATL_smvnk__900003.o : ATL_smvnk__900003.c
+	 $(GOODGCC) -o ATL_smvnk__900003.o -c -DATL_UGEMV=ATL_smvnk__900003 -x assembler-with-cpp -DSREAL $(CDEFS) ATL_smvnk__900003.c
+ATL_smvnk__900003_b0.o : ATL_smvnk__900003.c
+	 $(GOODGCC) -o ATL_smvnk__900003_b0.o -c -DATL_UGEMV=ATL_smvnk__900003_b0 -DBETA0 -x assembler-with-cpp -DSREAL $(CDEFS) ATL_smvnk__900003.c
+ATL_smvnk__900005.o : ATL_smvnk__900005.c
+	 $(GOODGCC) -o ATL_smvnk__900005.o -c -DATL_UGEMV=ATL_smvnk__900005 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=512 -DPFXDIST=0 -DPFYDIST=256 -DSREAL $(CDEFS) ATL_smvnk__900005.c
+ATL_smvnk__900005_b0.o : ATL_smvnk__900005.c
+	 $(GOODGCC) -o ATL_smvnk__900005_b0.o -c -DATL_UGEMV=ATL_smvnk__900005_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=512 -DPFXDIST=0 -DPFYDIST=256 -DSREAL $(CDEFS) ATL_smvnk__900005.c
+ATL_smvnk__2.o : ATL_smvnk__2.c
+	 $(MVNCC) -o ATL_smvnk__2.o -c -DATL_UGEMV=ATL_smvnk__2 $(MVNFLAGS) ATL_smvnk__2.c
+ATL_smvnk__2_b0.o : ATL_smvnk__2.c
+	 $(MVNCC) -o ATL_smvnk__2_b0.o -c -DATL_UGEMV=ATL_smvnk__2_b0 -DBETA0 $(MVNFLAGS) ATL_smvnk__2.c

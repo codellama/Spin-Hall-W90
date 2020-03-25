@@ -1,0 +1,357 @@
+include ../Make.inc
+
+CDEFS2 = $(CDEFS) -DATL_UCLEANM -DATL_UCLEANN -DATL_UCLEANK
+obj = \
+      ATL_sNBmm_b0.o \
+      ATL_sNBmm_b1.o \
+      ATL_sNBmm_bX.o \
+      ATL_sNCCUmmNN.o \
+      ATL_sNCCUmmNN_K.o \
+      ATL_sNCmmNN_a1_b0.o \
+      ATL_sNCmmNN_aX_b0.o \
+      ATL_sNCmmNN_a1_b1.o \
+      ATL_sNCmmNN_aX_b1.o \
+      ATL_sNCmmNN_a1_bX.o \
+      ATL_sNCmmNN_aX_bX.o \
+      ATL_sNCCUmmNT.o \
+      ATL_sNCCUmmNT_K.o \
+      ATL_sNCmmNT_a1_b0.o \
+      ATL_sNCmmNT_aX_b0.o \
+      ATL_sNCmmNT_a1_b1.o \
+      ATL_sNCmmNT_aX_b1.o \
+      ATL_sNCmmNT_a1_bX.o \
+      ATL_sNCmmNT_aX_bX.o \
+      ATL_sNCCUmmTN.o \
+      ATL_sNCCUmmTN_K.o \
+      ATL_sNCmmTN_a1_b0.o \
+      ATL_sNCmmTN_aX_b0.o \
+      ATL_sNCmmTN_a1_b1.o \
+      ATL_sNCmmTN_aX_b1.o \
+      ATL_sNCmmTN_a1_bX.o \
+      ATL_sNCmmTN_aX_bX.o \
+      ATL_sNCCUmmTT.o \
+      ATL_sNCCUmmTT_K.o \
+      ATL_sNCmmTT_a1_b0.o \
+      ATL_sNCmmTT_aX_b0.o \
+      ATL_sNCmmTT_a1_b1.o \
+      ATL_sNCmmTT_aX_b1.o \
+      ATL_sNCmmTT_a1_bX.o \
+      ATL_sNCmmTT_aX_bX.o \
+      ATL_supMBmm_b0.o \
+      ATL_supMBmm0_2_0_b0.o \
+      ATL_supMBmm0_4_0_b0.o \
+      ATL_supMBmm0_6_0_b0.o \
+      ATL_supMBmm0_10_0_b0.o \
+      ATL_supMBmm0_14_0_b0.o \
+      ATL_supMBmm_b1.o \
+      ATL_supMBmm0_2_0_b1.o \
+      ATL_supMBmm0_4_0_b1.o \
+      ATL_supMBmm0_6_0_b1.o \
+      ATL_supMBmm0_10_0_b1.o \
+      ATL_supMBmm0_14_0_b1.o \
+      ATL_supMBmm_bX.o \
+      ATL_supMBmm0_2_0_bX.o \
+      ATL_supMBmm0_4_0_bX.o \
+      ATL_supMBmm0_6_0_bX.o \
+      ATL_supMBmm0_10_0_bX.o \
+      ATL_supMBmm0_14_0_bX.o \
+      ATL_supNBmm_b0.o \
+      ATL_supNBmm0_1_0_b0.o \
+      ATL_supNBmm0_2_0_b0.o \
+      ATL_supNBmm_b1.o \
+      ATL_supNBmm0_1_0_b1.o \
+      ATL_supNBmm0_2_0_b1.o \
+      ATL_supNBmm_bX.o \
+      ATL_supNBmm0_1_0_bX.o \
+      ATL_supNBmm0_2_0_bX.o \
+      ATL_supKBmm_b0.o \
+      ATL_supKBmm4_4_1_b0.o \
+      ATL_supKBmm12_4_1_b0.o \
+      ATL_supKBmm20_4_1_b0.o \
+      ATL_supKBmm28_4_1_b0.o \
+      ATL_supKBmm36_4_1_b0.o \
+      ATL_supKBmm44_4_1_b0.o \
+      ATL_supKBmm52_4_1_b0.o \
+      ATL_supKBmm60_4_1_b0.o \
+      ATL_supKBmm68_4_1_b0.o \
+      ATL_supKBmm8_8_1_b0.o \
+      ATL_supKBmm16_8_1_b0.o \
+      ATL_supKBmm24_8_1_b0.o \
+      ATL_supKBmm32_8_1_b0.o \
+      ATL_supKBmm40_8_1_b0.o \
+      ATL_supKBmm48_8_1_b0.o \
+      ATL_supKBmm56_8_1_b0.o \
+      ATL_supKBmm64_8_1_b0.o \
+      ATL_supKBmm_b1.o \
+      ATL_supKBmm4_4_1_b1.o \
+      ATL_supKBmm12_4_1_b1.o \
+      ATL_supKBmm20_4_1_b1.o \
+      ATL_supKBmm28_4_1_b1.o \
+      ATL_supKBmm36_4_1_b1.o \
+      ATL_supKBmm44_4_1_b1.o \
+      ATL_supKBmm52_4_1_b1.o \
+      ATL_supKBmm60_4_1_b1.o \
+      ATL_supKBmm68_4_1_b1.o \
+      ATL_supKBmm8_8_1_b1.o \
+      ATL_supKBmm16_8_1_b1.o \
+      ATL_supKBmm24_8_1_b1.o \
+      ATL_supKBmm32_8_1_b1.o \
+      ATL_supKBmm40_8_1_b1.o \
+      ATL_supKBmm48_8_1_b1.o \
+      ATL_supKBmm56_8_1_b1.o \
+      ATL_supKBmm64_8_1_b1.o \
+      ATL_supKBmm_bX.o \
+      ATL_supKBmm4_4_1_bX.o \
+      ATL_supKBmm12_4_1_bX.o \
+      ATL_supKBmm20_4_1_bX.o \
+      ATL_supKBmm28_4_1_bX.o \
+      ATL_supKBmm36_4_1_bX.o \
+      ATL_supKBmm44_4_1_bX.o \
+      ATL_supKBmm52_4_1_bX.o \
+      ATL_supKBmm60_4_1_bX.o \
+      ATL_supKBmm68_4_1_bX.o \
+      ATL_supKBmm8_8_1_bX.o \
+      ATL_supKBmm16_8_1_bX.o \
+      ATL_supKBmm24_8_1_bX.o \
+      ATL_supKBmm32_8_1_bX.o \
+      ATL_supKBmm40_8_1_bX.o \
+      ATL_supKBmm48_8_1_bX.o \
+      ATL_supKBmm56_8_1_bX.o \
+      ATL_supKBmm64_8_1_bX.o \
+      ATL_sgpMBmm_b0.o \
+      ATL_sgpNBmm_b0.o \
+      ATL_sgpMBmm_b1.o \
+      ATL_sgpNBmm_b1.o \
+      ATL_sgpMBmm_bX.o \
+      ATL_sgpNBmm_bX.o \
+      ATL_sgpKBmm0.o \
+      ATL_sgpKBmm9.o \
+      ATL_sgpKBmm10.o \
+      ATL_sgpKBmm11.o \
+      ATL_sgpKBmm12.o \
+      ATL_sgpKBmm13.o \
+      ATL_sgpKBmm14.o \
+      ATL_sgpKBmm15.o \
+      ATL_sgpKBmm16.o \
+      ATL_sgpKBmm17.o \
+      ATL_sgpKBmm18.o \
+      ATL_sgpKBmm19.o \
+      ATL_sgpKBmm20.o \
+      ATL_sgpKBmm21.o \
+      ATL_sgpKBmm22.o \
+      ATL_sgpKBmm23.o \
+      ATL_sgpKBmm24.o \
+      ATL_sgpKBmm25.o \
+      ATL_sgpKBmm26.o \
+      ATL_sgpKBmm27.o \
+      ATL_sgpKBmm28.o \
+      ATL_sgpKBmm29.o \
+      ATL_sgpKBmm30.o \
+      ATL_sgpKBmm31.o \
+      ATL_sgpKBmm32.o \
+      ATL_sgpKBmm33.o \
+      ATL_sgpKBmm34.o \
+      ATL_sgpKBmm35.o \
+      ATL_sgpKBmm36.o \
+      ATL_sgpKBmm37.o \
+      ATL_sgpKBmm38.o \
+      ATL_sgpKBmm39.o \
+      ATL_sgpKBmm40.o \
+      ATL_sgpKBmm41.o \
+      ATL_sgpKBmm42.o \
+      ATL_sgpKBmm43.o \
+      ATL_sgpKBmm44.o \
+      ATL_sgpKBmm45.o \
+      ATL_sgpKBmm46.o \
+      ATL_sgpKBmm47.o \
+      ATL_sgpKBmm48.o \
+      ATL_sgpKBmm49.o \
+      ATL_sgpKBmm50.o \
+      ATL_sgpKBmm51.o \
+      ATL_sgpKBmm52.o \
+      ATL_sgpKBmm53.o \
+      ATL_sgpKBmm54.o \
+      ATL_sgpKBmm55.o \
+      ATL_sgpKBmm56.o \
+      ATL_sgpKBmm57.o \
+      ATL_sgpKBmm58.o \
+      ATL_sgpKBmm59.o \
+      ATL_sgpKBmm60.o \
+      ATL_sgpKBmm61.o \
+      ATL_sgpKBmm62.o \
+      ATL_sgpKBmm63.o \
+      ATL_sgpKBmm64.o \
+      ATL_sgpKBmm65.o \
+      ATL_sgpKBmm66.o \
+      ATL_sgpKBmm67.o \
+      ATL_sgpKBmm68.o \
+      ATL_sgpKBmm69.o \
+      ATL_sgpKBmm70.o \
+      ATL_sgpKBmm71.o \
+      ATL_sgpKBmm72.o \
+      ATL_sgpKBmm.o 
+
+sclean : clean
+clean : 
+	rm -f $(obj) slib.grd
+
+all : lib
+lib : slib
+slib : slib.grd
+slib.grd : $(obj)
+	 $(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	 $(RANLIB) $(ATLASlib)
+	 touch slib.grd
+ATL_supMBmm0_2_0_b0.o : ATL_supMBmm0_2_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supMBmm0_2_0_b0.c
+ATL_supMBmm0_2_0_b1.o : ATL_supMBmm0_2_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supMBmm0_2_0_b1.c
+ATL_supMBmm0_2_0_bX.o : ATL_supMBmm0_2_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supMBmm0_2_0_bX.c
+ATL_supMBmm0_4_0_b0.o : ATL_supMBmm0_4_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supMBmm0_4_0_b0.c
+ATL_supMBmm0_4_0_b1.o : ATL_supMBmm0_4_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supMBmm0_4_0_b1.c
+ATL_supMBmm0_4_0_bX.o : ATL_supMBmm0_4_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supMBmm0_4_0_bX.c
+ATL_supMBmm0_6_0_b0.o : ATL_supMBmm0_6_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supMBmm0_6_0_b0.c
+ATL_supMBmm0_6_0_b1.o : ATL_supMBmm0_6_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supMBmm0_6_0_b1.c
+ATL_supMBmm0_6_0_bX.o : ATL_supMBmm0_6_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supMBmm0_6_0_bX.c
+ATL_supMBmm0_10_0_b0.o : ATL_supMBmm0_10_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supMBmm0_10_0_b0.c
+ATL_supMBmm0_10_0_b1.o : ATL_supMBmm0_10_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supMBmm0_10_0_b1.c
+ATL_supMBmm0_10_0_bX.o : ATL_supMBmm0_10_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supMBmm0_10_0_bX.c
+ATL_supMBmm0_14_0_b0.o : ATL_supMBmm0_14_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supMBmm0_14_0_b0.c
+ATL_supMBmm0_14_0_b1.o : ATL_supMBmm0_14_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supMBmm0_14_0_b1.c
+ATL_supMBmm0_14_0_bX.o : ATL_supMBmm0_14_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supMBmm0_14_0_bX.c
+ATL_supNBmm0_1_0_b0.o : ATL_supNBmm0_1_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supNBmm0_1_0_b0.c
+ATL_supNBmm0_1_0_b1.o : ATL_supNBmm0_1_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supNBmm0_1_0_b1.c
+ATL_supNBmm0_1_0_bX.o : ATL_supNBmm0_1_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supNBmm0_1_0_bX.c
+ATL_supNBmm0_2_0_b0.o : ATL_supNBmm0_2_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supNBmm0_2_0_b0.c
+ATL_supNBmm0_2_0_b1.o : ATL_supNBmm0_2_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supNBmm0_2_0_b1.c
+ATL_supNBmm0_2_0_bX.o : ATL_supNBmm0_2_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supNBmm0_2_0_bX.c
+ATL_supKBmm4_4_1_b0.o : ATL_supKBmm4_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm4_4_1_b0.c
+ATL_supKBmm12_4_1_b0.o : ATL_supKBmm12_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm12_4_1_b0.c
+ATL_supKBmm20_4_1_b0.o : ATL_supKBmm20_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm20_4_1_b0.c
+ATL_supKBmm28_4_1_b0.o : ATL_supKBmm28_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm28_4_1_b0.c
+ATL_supKBmm36_4_1_b0.o : ATL_supKBmm36_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm36_4_1_b0.c
+ATL_supKBmm44_4_1_b0.o : ATL_supKBmm44_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm44_4_1_b0.c
+ATL_supKBmm52_4_1_b0.o : ATL_supKBmm52_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm52_4_1_b0.c
+ATL_supKBmm60_4_1_b0.o : ATL_supKBmm60_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm60_4_1_b0.c
+ATL_supKBmm68_4_1_b0.o : ATL_supKBmm68_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_supKBmm68_4_1_b0.c
+ATL_supKBmm4_4_1_b1.o : ATL_supKBmm4_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm4_4_1_b1.c
+ATL_supKBmm12_4_1_b1.o : ATL_supKBmm12_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm12_4_1_b1.c
+ATL_supKBmm20_4_1_b1.o : ATL_supKBmm20_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm20_4_1_b1.c
+ATL_supKBmm28_4_1_b1.o : ATL_supKBmm28_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm28_4_1_b1.c
+ATL_supKBmm36_4_1_b1.o : ATL_supKBmm36_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm36_4_1_b1.c
+ATL_supKBmm44_4_1_b1.o : ATL_supKBmm44_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm44_4_1_b1.c
+ATL_supKBmm52_4_1_b1.o : ATL_supKBmm52_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm52_4_1_b1.c
+ATL_supKBmm60_4_1_b1.o : ATL_supKBmm60_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm60_4_1_b1.c
+ATL_supKBmm68_4_1_b1.o : ATL_supKBmm68_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_supKBmm68_4_1_b1.c
+ATL_supKBmm4_4_1_bX.o : ATL_supKBmm4_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm4_4_1_bX.c
+ATL_supKBmm12_4_1_bX.o : ATL_supKBmm12_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm12_4_1_bX.c
+ATL_supKBmm20_4_1_bX.o : ATL_supKBmm20_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm20_4_1_bX.c
+ATL_supKBmm28_4_1_bX.o : ATL_supKBmm28_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm28_4_1_bX.c
+ATL_supKBmm36_4_1_bX.o : ATL_supKBmm36_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm36_4_1_bX.c
+ATL_supKBmm44_4_1_bX.o : ATL_supKBmm44_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm44_4_1_bX.c
+ATL_supKBmm52_4_1_bX.o : ATL_supKBmm52_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm52_4_1_bX.c
+ATL_supKBmm60_4_1_bX.o : ATL_supKBmm60_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm60_4_1_bX.c
+ATL_supKBmm68_4_1_bX.o : ATL_supKBmm68_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_supKBmm68_4_1_bX.c
+ATL_supKBmm8_8_1_b0.o : ATL_supKBmm8_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm8_8_1_b0.c
+ATL_supKBmm16_8_1_b0.o : ATL_supKBmm16_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm16_8_1_b0.c
+ATL_supKBmm24_8_1_b0.o : ATL_supKBmm24_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm24_8_1_b0.c
+ATL_supKBmm32_8_1_b0.o : ATL_supKBmm32_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm32_8_1_b0.c
+ATL_supKBmm40_8_1_b0.o : ATL_supKBmm40_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm40_8_1_b0.c
+ATL_supKBmm48_8_1_b0.o : ATL_supKBmm48_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm48_8_1_b0.c
+ATL_supKBmm56_8_1_b0.o : ATL_supKBmm56_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm56_8_1_b0.c
+ATL_supKBmm64_8_1_b0.o : ATL_supKBmm64_8_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_supKBmm64_8_1_b0.c
+ATL_supKBmm8_8_1_b1.o : ATL_supKBmm8_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm8_8_1_b1.c
+ATL_supKBmm16_8_1_b1.o : ATL_supKBmm16_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm16_8_1_b1.c
+ATL_supKBmm24_8_1_b1.o : ATL_supKBmm24_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm24_8_1_b1.c
+ATL_supKBmm32_8_1_b1.o : ATL_supKBmm32_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm32_8_1_b1.c
+ATL_supKBmm40_8_1_b1.o : ATL_supKBmm40_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm40_8_1_b1.c
+ATL_supKBmm48_8_1_b1.o : ATL_supKBmm48_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm48_8_1_b1.c
+ATL_supKBmm56_8_1_b1.o : ATL_supKBmm56_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm56_8_1_b1.c
+ATL_supKBmm64_8_1_b1.o : ATL_supKBmm64_8_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_supKBmm64_8_1_b1.c
+ATL_supKBmm8_8_1_bX.o : ATL_supKBmm8_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm8_8_1_bX.c
+ATL_supKBmm16_8_1_bX.o : ATL_supKBmm16_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm16_8_1_bX.c
+ATL_supKBmm24_8_1_bX.o : ATL_supKBmm24_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm24_8_1_bX.c
+ATL_supKBmm32_8_1_bX.o : ATL_supKBmm32_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm32_8_1_bX.c
+ATL_supKBmm40_8_1_bX.o : ATL_supKBmm40_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm40_8_1_bX.c
+ATL_supKBmm48_8_1_bX.o : ATL_supKBmm48_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm48_8_1_bX.c
+ATL_supKBmm56_8_1_bX.o : ATL_supKBmm56_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm56_8_1_bX.c
+ATL_supKBmm64_8_1_bX.o : ATL_supKBmm64_8_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_supKBmm64_8_1_bX.c
+ATL_sNBmm_b0.o : ATL_sNBmm_b0.c 
+	$(GOODGCC) $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_sNBmm_b0.c
+ATL_sNBmm_b1.o : ATL_sNBmm_b1.c 
+	$(GOODGCC) $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_sNBmm_b1.c
+ATL_sNBmm_bX.o : ATL_sNBmm_bX.c 
+	$(GOODGCC) $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_sNBmm_bX.c
+
+.c.o:
+	$(SMC) $(CDEFS2) $(SMCFLAGS) -c $<

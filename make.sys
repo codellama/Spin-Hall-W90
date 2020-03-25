@@ -1,0 +1,29 @@
+
+#=====================================================
+# For Linux with intel version 11/12 on 64bit machines
+#=====================================================
+F90 = ifort
+COMMS=mpi
+MPIF90=mpif90
+FCOPTS=-O2 
+LDOPTS=-O2 
+
+#========================================================
+# Intel mkl libraries. Set LIBPATH if not in default path
+#========================================================
+
+#LIBDIR = /opt/apps/intel/11.1/mkl/lib/em64t
+LIBDIR = $(TACC_MKL_LIB) 
+#LIBS   =  -L$(LIBDIR) -lmkl_core -lmkl_intel_lp64 -lmkl_sequential -lpthread
+LIBS   =  -L$(LIBDIR) -lmkl_core -lmkl_intel_lp64 -lmkl_sequential -lpthread
+
+#=======================
+# ATLAS Blas and LAPACK
+#=======================
+#LIBDIR = /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/lib/
+#LIBS = -L$(LIBDIR) -llapack -lf77blas -lcblas -latlas
+
+#LIBS = $(LIBDIR)/liblapack.a/
+#	$(LIBDIR)/libf77blas.a/
+#	$(LIBDIR)/libcblas.a/
+#  	$(LIBDIR)/libatlas.a

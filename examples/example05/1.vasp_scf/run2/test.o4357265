@@ -1,0 +1,34 @@
+TACC: Starting up job 4357265
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.3.3 18Dez12 (build Oct 01 2014 18:44:37) complex                        
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       2 ions
+ WARNING: for PREC=h ENMAX is automatically increase by 25 %
+        this was not the case for versions prior to vasp.4.4
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.564860682291E+01   -0.56486E+01   -0.49866E+03  1304   0.938E+02
+DAV:   2    -0.178170003111E+02   -0.12168E+02   -0.12154E+02  1848   0.949E+01
+DAV:   3    -0.178566706822E+02   -0.39670E-01   -0.39670E-01  1256   0.645E+00
+DAV:   4    -0.178566938929E+02   -0.23211E-04   -0.23211E-04  1680   0.161E-01
+DAV:   5    -0.178566938949E+02   -0.20402E-08   -0.20403E-08  1208   0.120E-03    0.808E+00
+DAV:   6    -0.168256487438E+02    0.10310E+01   -0.76889E-01  1208   0.759E+00    0.494E+00
+DAV:   7    -0.164823572039E+02    0.34329E+00   -0.80490E-01  1344   0.788E+00    0.135E+00
+DAV:   8    -0.164840508637E+02   -0.16937E-02   -0.19404E-03  1192   0.574E-01    0.768E-02
+DAV:   9    -0.164840309511E+02    0.19913E-04   -0.15805E-04  1456   0.114E-01    0.298E-02
+DAV:  10    -0.164840415042E+02   -0.10553E-04   -0.91854E-06  1232   0.387E-02    0.862E-03
+DAV:  11    -0.164840413573E+02    0.14686E-06   -0.55668E-08   576   0.266E-03
+   1 F= -.16484041E+02 E0= -.16484041E+02  d E =0.000000E+00
+ writing wavefunctions
+ 
+TACC: Shutdown complete. Exiting.

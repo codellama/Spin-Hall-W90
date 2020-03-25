@@ -1,0 +1,9 @@
+0 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64'
+1 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64'
+2 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64'
+3 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64'
+4 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64'
+5 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -m64'
+6 '/usr/bin/x86_64-redhat-linux-gcc' '-fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64'
+7 '/usr/bin/gfortran' '-O -mavx -m64'
+F2CNAME,F2CINT,F2CSTRING=(1,1,1)

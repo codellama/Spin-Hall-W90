@@ -1,0 +1,6 @@
+it's the get_SS_R that is creating problems
+maybe while the subroutine is called its info is not transferred to berry.F90
+
+this seems to be happening with Fe too
+so try calling get_SS_R in berry_main under while(ahc) where you call get_AA_R and get_HH_R
+Then only bring in (inherit) SS_R from get_oper subroutine

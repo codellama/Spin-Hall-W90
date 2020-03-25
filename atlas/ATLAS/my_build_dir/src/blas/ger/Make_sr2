@@ -1,0 +1,34 @@
+#
+#  This file generated at line 658 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/ger/r2hgen.c
+#
+include Make.inc
+
+R2CC = $(SKC)
+R2FLAGS = $(CDEFS) $(SKCFLAGS) -DSREAL
+
+obj = ATL_sger2k__900002.o ATL_sger2k__900007.o ATL_sger2k__900006.o ATL_sger2k__900004.o
+lib : slib
+slib : sr2k.grd
+sr2k.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch sr2k.grd
+sclean : clean
+clean :
+	- rm -f $(obj) sr2k.grd
+
+skilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_sger2k__900002.c ATL_sger2k__900007.c ATL_sger2k__900006.c ATL_sger2k__900004.c
+
+ATL_sger2k__900002.o : ATL_sger2k__900002.c
+	 $(GOODGCC) -o ATL_sger2k__900002.o -c -DATL_UGER2K=ATL_sger2k__900002 -x assembler-with-cpp -DPFIA=prefetcht2 -DPFIX=prefetcht1 -DPFIY=prefetcht1 -DPFADIST=512 -DPFXDIST=832 -DPFYDIST=512 -DSREAL $(CDEFS) ATL_sger2k__900002.c
+ATL_sger2k__900007.o : ATL_sger2k__900007.c
+	 $(GOODGCC) -o ATL_sger2k__900007.o -c -DATL_UGER2K=ATL_sger2k__900007 -x assembler-with-cpp -DPFIA=prefetcht2 -DPFIX=prefetcht2 -DPFIY=prefetcht2 -DPFADIST=0 -DPFXDIST=0 -DPFYDIST=320 -DSREAL $(CDEFS) ATL_sger2k__900007.c
+ATL_sger2k__900006.o : ATL_sger2k__900006.c
+	 $(GOODGCC) -o ATL_sger2k__900006.o -c -DATL_UGER2K=ATL_sger2k__900006 -x assembler-with-cpp -DPFIX=prefetchnta -DPFIY=prefetchnta -DPFADIST=256 -DPFXDIST=192 -DPFYDIST=192 -DSREAL $(CDEFS) ATL_sger2k__900006.c
+ATL_sger2k__900004.o : ATL_sger2k__900004.c
+	 $(GOODGCC) -o ATL_sger2k__900004.o -c -DATL_UGER2K=ATL_sger2k__900004 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetcht1 -DPFADIST=0 -DSREAL $(CDEFS) ATL_sger2k__900004.c

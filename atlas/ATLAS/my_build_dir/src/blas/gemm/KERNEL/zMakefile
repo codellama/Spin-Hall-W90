@@ -1,0 +1,344 @@
+include ../Make.inc
+
+CDEFS2 = $(CDEFS) -DATL_UCLEANM -DATL_UCLEANN -DATL_UCLEANK
+obj = \
+      ATL_zNBmm_b0.o \
+      ATL_zNBmm_b1.o \
+      ATL_zNBmm_bX.o \
+      ATL_zNCCUmmNN.o \
+      ATL_zNCCUmmNN_K.o \
+      ATL_zNCmmNN_a1_b0.o \
+      ATL_zNCmmNN_aX_b0.o \
+      ATL_zNCmmNN_a1_b1.o \
+      ATL_zNCmmNN_aX_b1.o \
+      ATL_zNCmmNN_a1_bX.o \
+      ATL_zNCmmNN_aX_bX.o \
+      ATL_zNCCUmmNT.o \
+      ATL_zNCCUmmNT_K.o \
+      ATL_zNCmmNT_a1_b0.o \
+      ATL_zNCmmNT_aX_b0.o \
+      ATL_zNCmmNT_a1_b1.o \
+      ATL_zNCmmNT_aX_b1.o \
+      ATL_zNCmmNT_a1_bX.o \
+      ATL_zNCmmNT_aX_bX.o \
+      ATL_zNCCUmmTN.o \
+      ATL_zNCCUmmTN_K.o \
+      ATL_zNCmmTN_a1_b0.o \
+      ATL_zNCmmTN_aX_b0.o \
+      ATL_zNCmmTN_a1_b1.o \
+      ATL_zNCmmTN_aX_b1.o \
+      ATL_zNCmmTN_a1_bX.o \
+      ATL_zNCmmTN_aX_bX.o \
+      ATL_zNCCUmmTT.o \
+      ATL_zNCCUmmTT_K.o \
+      ATL_zNCmmTT_a1_b0.o \
+      ATL_zNCmmTT_aX_b0.o \
+      ATL_zNCmmTT_a1_b1.o \
+      ATL_zNCmmTT_aX_b1.o \
+      ATL_zNCmmTT_a1_bX.o \
+      ATL_zNCmmTT_aX_bX.o \
+      ATL_zupMBmm_b0.o \
+      ATL_zupMBmm0_2_0_b0.o \
+      ATL_zupMBmm0_4_0_b0.o \
+      ATL_zupMBmm0_6_0_b0.o \
+      ATL_zupMBmm_b1.o \
+      ATL_zupMBmm0_2_0_b1.o \
+      ATL_zupMBmm0_4_0_b1.o \
+      ATL_zupMBmm0_6_0_b1.o \
+      ATL_zupMBmm_bX.o \
+      ATL_zupMBmm0_2_0_bX.o \
+      ATL_zupMBmm0_4_0_bX.o \
+      ATL_zupMBmm0_6_0_bX.o \
+      ATL_zupNBmm_b0.o \
+      ATL_zupNBmm0_2_0_b0.o \
+      ATL_zupNBmm_b1.o \
+      ATL_zupNBmm0_2_0_b1.o \
+      ATL_zupNBmm_bX.o \
+      ATL_zupNBmm0_2_0_bX.o \
+      ATL_zupKBmm_b0.o \
+      ATL_zupKBmm2_2_1_b0.o \
+      ATL_zupKBmm6_2_1_b0.o \
+      ATL_zupKBmm10_2_1_b0.o \
+      ATL_zupKBmm14_2_1_b0.o \
+      ATL_zupKBmm18_2_1_b0.o \
+      ATL_zupKBmm22_2_1_b0.o \
+      ATL_zupKBmm26_2_1_b0.o \
+      ATL_zupKBmm30_2_1_b0.o \
+      ATL_zupKBmm34_2_1_b0.o \
+      ATL_zupKBmm38_2_1_b0.o \
+      ATL_zupKBmm42_2_1_b0.o \
+      ATL_zupKBmm4_4_1_b0.o \
+      ATL_zupKBmm8_4_1_b0.o \
+      ATL_zupKBmm12_4_1_b0.o \
+      ATL_zupKBmm16_4_1_b0.o \
+      ATL_zupKBmm20_4_1_b0.o \
+      ATL_zupKBmm24_4_1_b0.o \
+      ATL_zupKBmm28_4_1_b0.o \
+      ATL_zupKBmm32_4_1_b0.o \
+      ATL_zupKBmm36_4_1_b0.o \
+      ATL_zupKBmm40_4_1_b0.o \
+      ATL_zupKBmm_b1.o \
+      ATL_zupKBmm2_2_1_b1.o \
+      ATL_zupKBmm6_2_1_b1.o \
+      ATL_zupKBmm10_2_1_b1.o \
+      ATL_zupKBmm14_2_1_b1.o \
+      ATL_zupKBmm18_2_1_b1.o \
+      ATL_zupKBmm22_2_1_b1.o \
+      ATL_zupKBmm26_2_1_b1.o \
+      ATL_zupKBmm30_2_1_b1.o \
+      ATL_zupKBmm34_2_1_b1.o \
+      ATL_zupKBmm38_2_1_b1.o \
+      ATL_zupKBmm42_2_1_b1.o \
+      ATL_zupKBmm4_4_1_b1.o \
+      ATL_zupKBmm8_4_1_b1.o \
+      ATL_zupKBmm12_4_1_b1.o \
+      ATL_zupKBmm16_4_1_b1.o \
+      ATL_zupKBmm20_4_1_b1.o \
+      ATL_zupKBmm24_4_1_b1.o \
+      ATL_zupKBmm28_4_1_b1.o \
+      ATL_zupKBmm32_4_1_b1.o \
+      ATL_zupKBmm36_4_1_b1.o \
+      ATL_zupKBmm40_4_1_b1.o \
+      ATL_zupKBmm_bX.o \
+      ATL_zupKBmm2_2_1_bX.o \
+      ATL_zupKBmm6_2_1_bX.o \
+      ATL_zupKBmm10_2_1_bX.o \
+      ATL_zupKBmm14_2_1_bX.o \
+      ATL_zupKBmm18_2_1_bX.o \
+      ATL_zupKBmm22_2_1_bX.o \
+      ATL_zupKBmm26_2_1_bX.o \
+      ATL_zupKBmm30_2_1_bX.o \
+      ATL_zupKBmm34_2_1_bX.o \
+      ATL_zupKBmm38_2_1_bX.o \
+      ATL_zupKBmm42_2_1_bX.o \
+      ATL_zupKBmm4_4_1_bX.o \
+      ATL_zupKBmm8_4_1_bX.o \
+      ATL_zupKBmm12_4_1_bX.o \
+      ATL_zupKBmm16_4_1_bX.o \
+      ATL_zupKBmm20_4_1_bX.o \
+      ATL_zupKBmm24_4_1_bX.o \
+      ATL_zupKBmm28_4_1_bX.o \
+      ATL_zupKBmm32_4_1_bX.o \
+      ATL_zupKBmm36_4_1_bX.o \
+      ATL_zupKBmm40_4_1_bX.o \
+      ATL_zgpMBmm_b0.o \
+      ATL_zgpNBmm_b0.o \
+      ATL_zgpMBmm_b1.o \
+      ATL_zgpNBmm_b1.o \
+      ATL_zgpMBmm_bX.o \
+      ATL_zgpNBmm_bX.o \
+      ATL_zgpKBmm0.o \
+      ATL_zgpKBmm3.o \
+      ATL_zgpKBmm4.o \
+      ATL_zgpKBmm5.o \
+      ATL_zgpKBmm6.o \
+      ATL_zgpKBmm7.o \
+      ATL_zgpKBmm8.o \
+      ATL_zgpKBmm9.o \
+      ATL_zgpKBmm10.o \
+      ATL_zgpKBmm11.o \
+      ATL_zgpKBmm12.o \
+      ATL_zgpKBmm13.o \
+      ATL_zgpKBmm14.o \
+      ATL_zgpKBmm15.o \
+      ATL_zgpKBmm16.o \
+      ATL_zgpKBmm17.o \
+      ATL_zgpKBmm18.o \
+      ATL_zgpKBmm19.o \
+      ATL_zgpKBmm20.o \
+      ATL_zgpKBmm21.o \
+      ATL_zgpKBmm22.o \
+      ATL_zgpKBmm23.o \
+      ATL_zgpKBmm24.o \
+      ATL_zgpKBmm25.o \
+      ATL_zgpKBmm26.o \
+      ATL_zgpKBmm27.o \
+      ATL_zgpKBmm28.o \
+      ATL_zgpKBmm29.o \
+      ATL_zgpKBmm30.o \
+      ATL_zgpKBmm31.o \
+      ATL_zgpKBmm32.o \
+      ATL_zgpKBmm33.o \
+      ATL_zgpKBmm34.o \
+      ATL_zgpKBmm35.o \
+      ATL_zgpKBmm36.o \
+      ATL_zgpKBmm37.o \
+      ATL_zgpKBmm38.o \
+      ATL_zgpKBmm39.o \
+      ATL_zgpKBmm40.o \
+      ATL_zgpKBmm41.o \
+      ATL_zgpKBmm42.o \
+      ATL_zgpKBmm43.o \
+      ATL_zgpKBmm44.o \
+      ATL_zgpKBmm.o 
+
+zclean : clean
+clean : 
+	rm -f $(obj) zlib.grd
+
+all : lib
+lib : zlib
+zlib : zlib.grd
+zlib.grd : $(obj)
+	 $(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	 $(RANLIB) $(ATLASlib)
+	 touch zlib.grd
+ATL_zupMBmm0_2_0_b0.o : ATL_zupMBmm0_2_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_zupMBmm0_2_0_b0.c
+ATL_zupMBmm0_2_0_b1.o : ATL_zupMBmm0_2_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_zupMBmm0_2_0_b1.c
+ATL_zupMBmm0_2_0_bX.o : ATL_zupMBmm0_2_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_zupMBmm0_2_0_bX.c
+ATL_zupMBmm0_4_0_b0.o : ATL_zupMBmm0_4_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupMBmm0_4_0_b0.c
+ATL_zupMBmm0_4_0_b1.o : ATL_zupMBmm0_4_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupMBmm0_4_0_b1.c
+ATL_zupMBmm0_4_0_bX.o : ATL_zupMBmm0_4_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupMBmm0_4_0_bX.c
+ATL_zupMBmm0_6_0_b0.o : ATL_zupMBmm0_6_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp ATL_zupMBmm0_6_0_b0.c
+ATL_zupMBmm0_6_0_b1.o : ATL_zupMBmm0_6_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp ATL_zupMBmm0_6_0_b1.c
+ATL_zupMBmm0_6_0_bX.o : ATL_zupMBmm0_6_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp ATL_zupMBmm0_6_0_bX.c
+ATL_zupNBmm0_2_0_b0.o : ATL_zupNBmm0_2_0_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupNBmm0_2_0_b0.c
+ATL_zupNBmm0_2_0_b1.o : ATL_zupNBmm0_2_0_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupNBmm0_2_0_b1.c
+ATL_zupNBmm0_2_0_bX.o : ATL_zupNBmm0_2_0_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupNBmm0_2_0_bX.c
+ATL_zupKBmm2_2_1_b0.o : ATL_zupKBmm2_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm2_2_1_b0.c
+ATL_zupKBmm6_2_1_b0.o : ATL_zupKBmm6_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm6_2_1_b0.c
+ATL_zupKBmm10_2_1_b0.o : ATL_zupKBmm10_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm10_2_1_b0.c
+ATL_zupKBmm14_2_1_b0.o : ATL_zupKBmm14_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm14_2_1_b0.c
+ATL_zupKBmm18_2_1_b0.o : ATL_zupKBmm18_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm18_2_1_b0.c
+ATL_zupKBmm22_2_1_b0.o : ATL_zupKBmm22_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm22_2_1_b0.c
+ATL_zupKBmm26_2_1_b0.o : ATL_zupKBmm26_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm26_2_1_b0.c
+ATL_zupKBmm30_2_1_b0.o : ATL_zupKBmm30_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm30_2_1_b0.c
+ATL_zupKBmm34_2_1_b0.o : ATL_zupKBmm34_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm34_2_1_b0.c
+ATL_zupKBmm38_2_1_b0.o : ATL_zupKBmm38_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm38_2_1_b0.c
+ATL_zupKBmm42_2_1_b0.o : ATL_zupKBmm42_2_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -m64 ATL_zupKBmm42_2_1_b0.c
+ATL_zupKBmm2_2_1_b1.o : ATL_zupKBmm2_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm2_2_1_b1.c
+ATL_zupKBmm6_2_1_b1.o : ATL_zupKBmm6_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm6_2_1_b1.c
+ATL_zupKBmm10_2_1_b1.o : ATL_zupKBmm10_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm10_2_1_b1.c
+ATL_zupKBmm14_2_1_b1.o : ATL_zupKBmm14_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm14_2_1_b1.c
+ATL_zupKBmm18_2_1_b1.o : ATL_zupKBmm18_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm18_2_1_b1.c
+ATL_zupKBmm22_2_1_b1.o : ATL_zupKBmm22_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm22_2_1_b1.c
+ATL_zupKBmm26_2_1_b1.o : ATL_zupKBmm26_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm26_2_1_b1.c
+ATL_zupKBmm30_2_1_b1.o : ATL_zupKBmm30_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm30_2_1_b1.c
+ATL_zupKBmm34_2_1_b1.o : ATL_zupKBmm34_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm34_2_1_b1.c
+ATL_zupKBmm38_2_1_b1.o : ATL_zupKBmm38_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm38_2_1_b1.c
+ATL_zupKBmm42_2_1_b1.o : ATL_zupKBmm42_2_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -m64 ATL_zupKBmm42_2_1_b1.c
+ATL_zupKBmm2_2_1_bX.o : ATL_zupKBmm2_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm2_2_1_bX.c
+ATL_zupKBmm6_2_1_bX.o : ATL_zupKBmm6_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm6_2_1_bX.c
+ATL_zupKBmm10_2_1_bX.o : ATL_zupKBmm10_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm10_2_1_bX.c
+ATL_zupKBmm14_2_1_bX.o : ATL_zupKBmm14_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm14_2_1_bX.c
+ATL_zupKBmm18_2_1_bX.o : ATL_zupKBmm18_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm18_2_1_bX.c
+ATL_zupKBmm22_2_1_bX.o : ATL_zupKBmm22_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm22_2_1_bX.c
+ATL_zupKBmm26_2_1_bX.o : ATL_zupKBmm26_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm26_2_1_bX.c
+ATL_zupKBmm30_2_1_bX.o : ATL_zupKBmm30_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm30_2_1_bX.c
+ATL_zupKBmm34_2_1_bX.o : ATL_zupKBmm34_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm34_2_1_bX.c
+ATL_zupKBmm38_2_1_bX.o : ATL_zupKBmm38_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm38_2_1_bX.c
+ATL_zupKBmm42_2_1_bX.o : ATL_zupKBmm42_2_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -m64 ATL_zupKBmm42_2_1_bX.c
+ATL_zupKBmm4_4_1_b0.o : ATL_zupKBmm4_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm4_4_1_b0.c
+ATL_zupKBmm8_4_1_b0.o : ATL_zupKBmm8_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm8_4_1_b0.c
+ATL_zupKBmm12_4_1_b0.o : ATL_zupKBmm12_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm12_4_1_b0.c
+ATL_zupKBmm16_4_1_b0.o : ATL_zupKBmm16_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm16_4_1_b0.c
+ATL_zupKBmm20_4_1_b0.o : ATL_zupKBmm20_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm20_4_1_b0.c
+ATL_zupKBmm24_4_1_b0.o : ATL_zupKBmm24_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm24_4_1_b0.c
+ATL_zupKBmm28_4_1_b0.o : ATL_zupKBmm28_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm28_4_1_b0.c
+ATL_zupKBmm32_4_1_b0.o : ATL_zupKBmm32_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm32_4_1_b0.c
+ATL_zupKBmm36_4_1_b0.o : ATL_zupKBmm36_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm36_4_1_b0.c
+ATL_zupKBmm40_4_1_b0.o : ATL_zupKBmm40_4_1_b0.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zupKBmm40_4_1_b0.c
+ATL_zupKBmm4_4_1_b1.o : ATL_zupKBmm4_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm4_4_1_b1.c
+ATL_zupKBmm8_4_1_b1.o : ATL_zupKBmm8_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm8_4_1_b1.c
+ATL_zupKBmm12_4_1_b1.o : ATL_zupKBmm12_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm12_4_1_b1.c
+ATL_zupKBmm16_4_1_b1.o : ATL_zupKBmm16_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm16_4_1_b1.c
+ATL_zupKBmm20_4_1_b1.o : ATL_zupKBmm20_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm20_4_1_b1.c
+ATL_zupKBmm24_4_1_b1.o : ATL_zupKBmm24_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm24_4_1_b1.c
+ATL_zupKBmm28_4_1_b1.o : ATL_zupKBmm28_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm28_4_1_b1.c
+ATL_zupKBmm32_4_1_b1.o : ATL_zupKBmm32_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm32_4_1_b1.c
+ATL_zupKBmm36_4_1_b1.o : ATL_zupKBmm36_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm36_4_1_b1.c
+ATL_zupKBmm40_4_1_b1.o : ATL_zupKBmm40_4_1_b1.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zupKBmm40_4_1_b1.c
+ATL_zupKBmm4_4_1_bX.o : ATL_zupKBmm4_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm4_4_1_bX.c
+ATL_zupKBmm8_4_1_bX.o : ATL_zupKBmm8_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm8_4_1_bX.c
+ATL_zupKBmm12_4_1_bX.o : ATL_zupKBmm12_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm12_4_1_bX.c
+ATL_zupKBmm16_4_1_bX.o : ATL_zupKBmm16_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm16_4_1_bX.c
+ATL_zupKBmm20_4_1_bX.o : ATL_zupKBmm20_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm20_4_1_bX.c
+ATL_zupKBmm24_4_1_bX.o : ATL_zupKBmm24_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm24_4_1_bX.c
+ATL_zupKBmm28_4_1_bX.o : ATL_zupKBmm28_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm28_4_1_bX.c
+ATL_zupKBmm32_4_1_bX.o : ATL_zupKBmm32_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm32_4_1_bX.c
+ATL_zupKBmm36_4_1_bX.o : ATL_zupKBmm36_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm36_4_1_bX.c
+ATL_zupKBmm40_4_1_bX.o : ATL_zupKBmm40_4_1_bX.c 
+	/usr/bin/x86_64-redhat-linux-gcc -fomit-frame-pointer -mfpmath=sse -O2 -fno-schedule-insns2 -mavx -m64 -m64 $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zupKBmm40_4_1_bX.c
+ATL_zNBmm_b0.o : ATL_zNBmm_b0.c 
+	$(GOODGCC) $(CDEFS2) -DATL_BETA=0 -c -x assembler-with-cpp -mavx ATL_zNBmm_b0.c
+ATL_zNBmm_b1.o : ATL_zNBmm_b1.c 
+	$(GOODGCC) $(CDEFS2) -DATL_BETA=1 -c -x assembler-with-cpp -mavx ATL_zNBmm_b1.c
+ATL_zNBmm_bX.o : ATL_zNBmm_bX.c 
+	$(GOODGCC) $(CDEFS2) -DATL_BETA=X -c -x assembler-with-cpp -mavx ATL_zNBmm_bX.c
+
+.c.o:
+	$(DMC) $(CDEFS2) $(DMCFLAGS) -c $<

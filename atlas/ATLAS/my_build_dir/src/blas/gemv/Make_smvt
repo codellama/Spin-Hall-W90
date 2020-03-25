@@ -1,0 +1,42 @@
+#
+#  This file generated at line 274 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/mvthgen.c
+#
+include Make.inc
+
+MVTCC = $(SKC)
+MVTFLAGS = $(CDEFS) $(SKCFLAGS) -DSREAL
+
+obj = ATL_smvtk__900002.o ATL_smvtk__900002_b0.o ATL_smvtk__900006.o ATL_smvtk__900006_b0.o ATL_smvtk__2.o ATL_smvtk__2_b0.o ATL_smvtk__900005.o ATL_smvtk__900005_b0.o
+lib : slib
+slib : smvtk.grd
+smvtk.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch smvtk.grd
+sclean : clean
+clean :
+	- rm -f $(obj) smvtk.grd
+
+skilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_smvtk__900002.c ATL_smvtk__900006.c ATL_smvtk__2.c ATL_smvtk__900005.c
+
+ATL_smvtk__900002.o : ATL_smvtk__900002.c
+	 $(GOODGCC) -o ATL_smvtk__900002.o -c -DATL_UGEMV=ATL_smvtk__900002 -x assembler-with-cpp -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=896 -DPFXDIST=128 -DPFYDIST=384 -DSREAL $(CDEFS) ATL_smvtk__900002.c
+ATL_smvtk__900002_b0.o : ATL_smvtk__900002.c
+	 $(GOODGCC) -o ATL_smvtk__900002_b0.o -c -DATL_UGEMV=ATL_smvtk__900002_b0 -DBETA0 -x assembler-with-cpp -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=896 -DPFXDIST=128 -DPFYDIST=384 -DSREAL $(CDEFS) ATL_smvtk__900002.c
+ATL_smvtk__900006.o : ATL_smvtk__900006.c
+	 $(GOODGCC) -o ATL_smvtk__900006.o -c -DATL_UGEMV=ATL_smvtk__900006 -x assembler-with-cpp -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=128 -DPFXDIST=0 -DSREAL $(CDEFS) ATL_smvtk__900006.c
+ATL_smvtk__900006_b0.o : ATL_smvtk__900006.c
+	 $(GOODGCC) -o ATL_smvtk__900006_b0.o -c -DATL_UGEMV=ATL_smvtk__900006_b0 -DBETA0 -x assembler-with-cpp -DPFIX=prefetcht2 -DPFIY=prefetchnta -DPFADIST=128 -DPFXDIST=0 -DSREAL $(CDEFS) ATL_smvtk__900006.c
+ATL_smvtk__2.o : ATL_smvtk__2.c
+	 $(MVTCC) -o ATL_smvtk__2.o -c -DATL_UGEMV=ATL_smvtk__2 $(MVTFLAGS) ATL_smvtk__2.c
+ATL_smvtk__2_b0.o : ATL_smvtk__2.c
+	 $(MVTCC) -o ATL_smvtk__2_b0.o -c -DATL_UGEMV=ATL_smvtk__2_b0 -DBETA0 $(MVTFLAGS) ATL_smvtk__2.c
+ATL_smvtk__900005.o : ATL_smvtk__900005.c
+	 $(GOODGCC) -o ATL_smvtk__900005.o -c -DATL_UGEMV=ATL_smvtk__900005 -x assembler-with-cpp -DPFIY=prefetcht0 -DPFADIST=192 -DPFXDIST=256 -DPFYDIST=512 -DSREAL $(CDEFS) ATL_smvtk__900005.c
+ATL_smvtk__900005_b0.o : ATL_smvtk__900005.c
+	 $(GOODGCC) -o ATL_smvtk__900005_b0.o -c -DATL_UGEMV=ATL_smvtk__900005_b0 -DBETA0 -x assembler-with-cpp -DPFIY=prefetcht0 -DPFADIST=192 -DPFXDIST=256 -DPFYDIST=512 -DSREAL $(CDEFS) ATL_smvtk__900005.c

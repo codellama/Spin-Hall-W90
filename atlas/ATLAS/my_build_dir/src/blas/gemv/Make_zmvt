@@ -1,0 +1,42 @@
+#
+#  This file generated at line 274 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/gemv/mvthgen.c
+#
+include Make.inc
+
+MVTCC = $(DKC)
+MVTFLAGS = $(CDEFS) $(DKCFLAGS) -DDCPLX
+
+obj = ATL_zmvtk__900002.o ATL_zmvtk__900002_b0.o ATL_zmvtk__900006.o ATL_zmvtk__900006_b0.o ATL_zmvtk__900003.o ATL_zmvtk__900003_b0.o ATL_zmvtk__900005.o ATL_zmvtk__900005_b0.o
+lib : zlib
+zlib : zmvtk.grd
+zmvtk.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch zmvtk.grd
+zclean : clean
+clean :
+	- rm -f $(obj) zmvtk.grd
+
+zkilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_zmvtk__900002.c ATL_zmvtk__900006.c ATL_zmvtk__900003.c ATL_zmvtk__900005.c
+
+ATL_zmvtk__900002.o : ATL_zmvtk__900002.c
+	 $(GOODGCC) -o ATL_zmvtk__900002.o -c -DATL_UGEMV=ATL_zmvtk__900002 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht0 -DPFIY=prefetcht2 -DPFADIST=256 -DPFXDIST=320 -DPFYDIST=128 -DDCPLX $(CDEFS) ATL_zmvtk__900002.c
+ATL_zmvtk__900002_b0.o : ATL_zmvtk__900002.c
+	 $(GOODGCC) -o ATL_zmvtk__900002_b0.o -c -DATL_UGEMV=ATL_zmvtk__900002_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetcht0 -DPFIY=prefetcht2 -DPFADIST=256 -DPFXDIST=320 -DPFYDIST=128 -DDCPLX $(CDEFS) ATL_zmvtk__900002.c
+ATL_zmvtk__900006.o : ATL_zmvtk__900006.c
+	 $(GOODGCC) -o ATL_zmvtk__900006.o -c -DATL_UGEMV=ATL_zmvtk__900006 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht2 -DPFADIST=128 -DPFXDIST=512 -DPFYDIST=0 -DDCPLX $(CDEFS) ATL_zmvtk__900006.c
+ATL_zmvtk__900006_b0.o : ATL_zmvtk__900006.c
+	 $(GOODGCC) -o ATL_zmvtk__900006_b0.o -c -DATL_UGEMV=ATL_zmvtk__900006_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht2 -DPFADIST=128 -DPFXDIST=512 -DPFYDIST=0 -DDCPLX $(CDEFS) ATL_zmvtk__900006.c
+ATL_zmvtk__900003.o : ATL_zmvtk__900003.c
+	 $(GOODGCC) -o ATL_zmvtk__900003.o -c -DATL_UGEMV=ATL_zmvtk__900003 -x assembler-with-cpp -DDCPLX $(CDEFS) ATL_zmvtk__900003.c
+ATL_zmvtk__900003_b0.o : ATL_zmvtk__900003.c
+	 $(GOODGCC) -o ATL_zmvtk__900003_b0.o -c -DATL_UGEMV=ATL_zmvtk__900003_b0 -DBETA0 -x assembler-with-cpp -DDCPLX $(CDEFS) ATL_zmvtk__900003.c
+ATL_zmvtk__900005.o : ATL_zmvtk__900005.c
+	 $(GOODGCC) -o ATL_zmvtk__900005.o -c -DATL_UGEMV=ATL_zmvtk__900005 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetchnta -DPFIY=prefetchnta -DPFADIST=128 -DPFXDIST=128 -DPFYDIST=128 -DDCPLX $(CDEFS) ATL_zmvtk__900005.c
+ATL_zmvtk__900005_b0.o : ATL_zmvtk__900005.c
+	 $(GOODGCC) -o ATL_zmvtk__900005_b0.o -c -DATL_UGEMV=ATL_zmvtk__900005_b0 -DBETA0 -x assembler-with-cpp -DPFIA=prefetchnta -DPFIX=prefetchnta -DPFIY=prefetchnta -DPFADIST=128 -DPFXDIST=128 -DPFYDIST=128 -DDCPLX $(CDEFS) ATL_zmvtk__900005.c

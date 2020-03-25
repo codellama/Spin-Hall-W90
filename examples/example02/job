@@ -1,0 +1,9 @@
+#!/bin/bash               
+#SBATCH -J wann_try           # job name
+#SBATCH -o test.o%j       # output and error file name (%j expands to jobID)
+#SBATCH -n 1             # total number of mpi tasks requested
+#SBATCH -p development     # queue (partition) -- normal, development, etc.
+#SBATCH -t  0:10:00        # run time (hh:mm:ss) - 1.5 hours
+#SBATCH -A TG-DMR140116
+
+ibrun /work/03192/priyaj/wannier90-2.0.0/wannier90.x lead 

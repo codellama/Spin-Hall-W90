@@ -1,0 +1,53 @@
+TACC: Starting up job 4357164
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.3.3 18Dez12 (build Oct 01 2014 18:44:37) complex                        
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       2 ions
+ WARNING: for PREC=h ENMAX is automatically increase by 25 %
+        this was not the case for versions prior to vasp.4.4
+ LDA part: xc-table for Pade appr. of Perdew
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      The number of bands has been changed from the values supplied          |
+|      in the INCAR file. This is a result of running the parallel version.   |
+|      The orbitals not found in the WAVECAR file will be initialized with    |
+|      random numbers, which is usually adequate. For correlated              |
+|      calculations, however, you should redo the groundstate calculation.    |
+|      I found NBANDS    =       10  now  NBANDS  =      12                   |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ WARNING: stress and forces are not correct
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ charge-density read from file: unknown                                 
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.955355604470E+00    0.95536E+00   -0.42904E+03  1868   0.618E+02
+DAV:   2    -0.162586487931E+02   -0.17214E+02   -0.16765E+02  2188   0.122E+02
+DAV:   3    -0.164839103569E+02   -0.22526E+00   -0.22496E+00  1964   0.100E+01
+DAV:   4    -0.164840412189E+02   -0.13086E-03   -0.13086E-03  1884   0.307E-01
+DAV:   5    -0.164840412790E+02   -0.60140E-07   -0.60140E-07  1964   0.584E-03
+DAV:   6    -0.164840412791E+02   -0.99476E-10   -0.82873E-10  1376   0.182E-04
+[c557-902.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-902.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-902.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 63492) terminated with signal 11 -> abort job
+[c557-902.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_0 from node c557-902 aborted: Error while reading a PMI socket (4)
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.

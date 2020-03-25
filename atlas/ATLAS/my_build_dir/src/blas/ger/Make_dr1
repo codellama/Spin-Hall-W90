@@ -1,0 +1,36 @@
+#
+#  This file generated at line 634 of /work/03192/priyaj/wannier90-2.0.0/atlas/ATLAS/my_build_dir/..//tune/blas/ger/r1hgen.c
+#
+include Make.inc
+
+R1CC = $(DKC)
+R1FLAGS = $(CDEFS) $(DKCFLAGS) -DDREAL
+
+obj = ATL_dgerk__900002.o ATL_dgerk__900006.o ATL_dgerk__900007.o ATL_dgerk__6.o ATL_dgerk__900005.o
+lib : dlib
+dlib : dr1k.grd
+dr1k.grd : $(obj)
+	$(ARCHIVER) $(ARFLAGS) $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+	touch dr1k.grd
+dclean : clean
+clean :
+	- rm -f $(obj) dr1k.grd
+
+dkilllib : killlib
+killlib : 
+	- $(ARCHIVER) d $(ATLASlib) $(obj)
+	$(RANLIB) $(ATLASlib)
+killall : killlib clean
+	 rm -f ATL_dgerk__900002.c ATL_dgerk__900006.c ATL_dgerk__900007.c ATL_dgerk__6.c ATL_dgerk__900005.c
+
+ATL_dgerk__900002.o : ATL_dgerk__900002.c
+	 $(GOODGCC) -o ATL_dgerk__900002.o -c -DATL_UGERK=ATL_dgerk__900002 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIY=prefetcht0 -DPFADIST=448 -DPFYDIST=192 -DDREAL $(CDEFS) ATL_dgerk__900002.c
+ATL_dgerk__900006.o : ATL_dgerk__900006.c
+	 $(GOODGCC) -o ATL_dgerk__900006.o -c -DATL_UGERK=ATL_dgerk__900006 -x assembler-with-cpp -DPFIX=prefetcht2 -DPFIY=prefetcht0 -DPFADIST=0 -DPFXDIST=128 -DPFYDIST=448 -DDREAL $(CDEFS) ATL_dgerk__900006.c
+ATL_dgerk__900007.o : ATL_dgerk__900007.c
+	 $(GOODGCC) -o ATL_dgerk__900007.o -c -DATL_UGERK=ATL_dgerk__900007 -x assembler-with-cpp -DPFIA=prefetcht0 -DPFIX=prefetcht0 -DPFIY=prefetchnta -DPFADIST=128 -DPFXDIST=320 -DPFYDIST=256 -DDREAL $(CDEFS) ATL_dgerk__900007.c
+ATL_dgerk__6.o : ATL_dgerk__6.c
+	 $(R1CC) -o ATL_dgerk__6.o -c -DATL_UGERK=ATL_dgerk__6 $(R1FLAGS) ATL_dgerk__6.c
+ATL_dgerk__900005.o : ATL_dgerk__900005.c
+	 $(GOODGCC) -o ATL_dgerk__900005.o -c -DATL_UGERK=ATL_dgerk__900005 -x assembler-with-cpp -DPFADIST=0 -DPFXDIST=0 -DDREAL $(CDEFS) ATL_dgerk__900005.c

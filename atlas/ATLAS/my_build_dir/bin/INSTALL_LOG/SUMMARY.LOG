@@ -1,0 +1,303 @@
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*       BEGAN ATLAS3.10.2 INSTALL OF SECTION 0-0-0 ON 09/28/2014 AT 16:43     *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
+
+
+BEGIN STAGE 1-0-0: SYSTEM PROBE/AUX COMPILE at 16:43
+   Level 1 cache size calculated as 32KB.
+
+   dFPU: Separate multiply and add instructions with 5 cycle pipeline.
+         Apparent number of registers : 23
+         Register-register performance=2537.93MFLOPS
+   sFPU: Separate multiply and add instructions with 5 cycle pipeline.
+         Apparent number of registers : 19
+         Register-register performance=2767.66MFLOPS
+DONE  STAGE 1-0-0 at 16:44
+
+
+BEGIN STAGE 2-0-0: TYPE-DEPENDENT TUNING at 16:44
+
+
+BEGIN STAGE 2-1-0: TUNING PREC='d' (precision 1 of 4) at 16:44
+
+
+   BEGIN STAGE 2-1-1: BUILDING BLOCK MATMUL TUNE at 16:44
+      The best matmul kernel was CASES/ATL_dmm4x2x256_avx.c, NB=52, written by R. Clint Whaley
+      Performance: 8300.40MFLOPS (307.42 percent of of detected clock rate)
+        (Gen case got 6579.12MFLOPS)
+      mmNN   : ma=0, lat=5, nb=40, mu=10, nu=1 ku=4, ff=0, if=7, nf=1
+               Performance = 4475.86 (53.92 of copy matmul, 165.77 of clock)
+      mmNT   : ma=0, lat=5, nb=40, mu=10, nu=1 ku=4, ff=0, if=7, nf=1
+               Performance = 4162.68 (50.15 of copy matmul, 154.17 of clock)
+      mmTN   : ma=0, lat=2, nb=40, mu=10, nu=1 ku=40, ff=0, if=7, nf=1
+               Performance = 4666.01 (56.21 of copy matmul, 172.82 of clock)
+      mmTT   : ma=0, lat=4, nb=40, mu=10, nu=1 ku=40, ff=0, if=7, nf=1
+               Performance = 4021.97 (48.46 of copy matmul, 148.96 of clock)
+
+   DONE  STAGE 2-1-1 at 16:45
+
+
+   BEGIN STAGE 2-1-2: CacheEdge DETECTION at 16:45
+      CacheEdge set to 2097152 bytes
+   DONE  STAGE 2-1-2 at 16:45
+
+
+   BEGIN STAGE 2-1-3: SMALL/LARGE CROSSOVER at 16:45
+
+
+   STAGE 2-1-3: COPY/NO-COPY CROSSOVER DETECTION
+      done.
+   DONE  STAGE 2-1-3 at 16:45
+
+
+   BEGIN STAGE 2-1-4: L3BLAS TUNE at 16:45
+   DONE  STAGE 2-1-4 at 16:45
+
+
+   BEGIN STAGE 2-1-5: GEMV TUNE at 16:45
+      gemvN : main kernel 900002:dmvn_sse.c written by R. Clint Whaley
+            mu=8, nu=2, using 30720 Cache Elements
+              Performance = 3067.43 (36.96 of copy matmul, 113.61 of clock)
+      gemvT : main kernel 900002:dmvt_sse.c written by R. Clint Whaley
+            mu=16, nu=2, using 26624 Cache Elements
+              Performance = 1533.97 (18.48 of copy matmul, 56.81 of clock)
+   DONE  STAGE 2-1-5 at 16:46
+
+
+   BEGIN STAGE 2-1-6: GER TUNE at 16:46
+      ger : main kernel 900002:dr1_sse.c written by R. Clint Whaley
+            mu=8, nu=1, using 28672 Cache Elements
+              Performance = 1150.54 (13.86 of copy matmul, 42.61 of clock)
+   DONE  STAGE 2-1-6 at 16:46
+DONE  STAGE 2-0-0 at 16:46
+
+
+BEGIN STAGE 2-2-0: TUNING PREC='s' (precision 2 of 4) at 16:46
+
+
+   BEGIN STAGE 2-2-1: BUILDING BLOCK MATMUL TUNE at 16:46
+      The best matmul kernel was CASES/ATL_smm4x2x256_avx.c, NB=72, written by R. Clint Whaley
+      Performance: 19458.47MFLOPS (720.68 percent of of detected clock rate)
+        (Gen case got 5223.76MFLOPS)
+      mmNN   : ma=0, lat=8, nb=68, mu=2, nu=5 ku=68, ff=1, if=6, nf=1
+               Performance = 3637.09 (18.69 of copy matmul, 134.71 of clock)
+      mmNT   : ma=0, lat=2, nb=68, mu=2, nu=5 ku=1, ff=1, if=6, nf=1
+               Performance = 6432.55 (33.06 of copy matmul, 238.24 of clock)
+      mmTN   : ma=0, lat=8, nb=68, mu=2, nu=5 ku=68, ff=1, if=6, nf=1
+               Performance = 4760.46 (24.46 of copy matmul, 176.31 of clock)
+      mmTT   : ma=0, lat=1, nb=68, mu=2, nu=5 ku=4, ff=1, if=6, nf=1
+               Performance = 6568.25 (33.76 of copy matmul, 243.27 of clock)
+
+   DONE  STAGE 2-2-1 at 16:48
+
+
+   BEGIN STAGE 2-2-2: CacheEdge DETECTION at 16:48
+      CacheEdge set to 2097152 bytes
+   DONE  STAGE 2-2-2 at 16:48
+
+
+   BEGIN STAGE 2-2-3: SMALL/LARGE CROSSOVER at 16:48
+
+
+   STAGE 2-2-3: COPY/NO-COPY CROSSOVER DETECTION
+      done.
+   DONE  STAGE 2-2-3 at 16:48
+
+
+   BEGIN STAGE 2-2-4: L3BLAS TUNE at 16:48
+   DONE  STAGE 2-2-4 at 16:48
+
+
+   BEGIN STAGE 2-2-5: GEMV TUNE at 16:48
+      gemvN : main kernel 900002:smvn_sse.c written by R. Clint Whaley
+            mu=16, nu=2, using 32768 Cache Elements
+              Performance = 4001.00 (20.56 of copy matmul, 148.19 of clock)
+      gemvT : main kernel 900002:smvt_sse.c written by R. Clint Whaley
+            mu=16, nu=2, using 24576 Cache Elements
+              Performance = 4001.00 (20.56 of copy matmul, 148.19 of clock)
+   DONE  STAGE 2-2-5 at 16:48
+
+
+   BEGIN STAGE 2-2-6: GER TUNE at 16:48
+      ger : main kernel 900002:sr1_sse.c written by R. Clint Whaley
+            mu=16, nu=1, using 40960 Cache Elements
+              Performance = 2400.88 (12.34 of copy matmul, 88.92 of clock)
+   DONE  STAGE 2-2-6 at 16:49
+DONE  STAGE 2-0-0 at 16:49
+
+
+BEGIN STAGE 2-3-0: TUNING PREC='z' (precision 3 of 4) at 16:49
+
+
+   BEGIN STAGE 2-3-1: BUILDING BLOCK MATMUL TUNE at 16:49
+      The best matmul kernel was CASES/ATL_dmm4x2x256_avx.c, NB=44, written by R. Clint Whaley
+      Performance: 8202.44MFLOPS (303.79 percent of of detected clock rate)
+        (Gen case got 3550.30MFLOPS)
+      mmNN   : ma=1, lat=5, nb=40, mu=10, nu=1 ku=40, ff=0, if=5, nf=2
+               Performance = 4287.30 (52.27 of copy matmul, 158.79 of clock)
+      mmNT   : ma=1, lat=2, nb=40, mu=10, nu=1 ku=40, ff=0, if=5, nf=2
+               Performance = 4287.31 (52.27 of copy matmul, 158.79 of clock)
+      mmTN   : ma=1, lat=8, nb=40, mu=10, nu=1 ku=40, ff=0, if=5, nf=2
+               Performance = 5098.84 (62.16 of copy matmul, 188.85 of clock)
+      mmTT   : ma=1, lat=5, nb=40, mu=10, nu=1 ku=40, ff=0, if=5, nf=2
+               Performance = 6402.12 (78.05 of copy matmul, 237.12 of clock)
+
+   DONE  STAGE 2-3-1 at 16:50
+
+
+   BEGIN STAGE 2-3-2: CacheEdge DETECTION at 16:50
+      CacheEdge set to 2097152 bytes
+      zdNKB set to 0 bytes
+   DONE  STAGE 2-3-2 at 16:50
+
+
+   BEGIN STAGE 2-3-3: SMALL/LARGE CROSSOVER at 16:50
+
+
+   STAGE 2-3-3: COPY/NO-COPY CROSSOVER DETECTION
+      done.
+   DONE  STAGE 2-3-3 at 16:50
+
+
+   BEGIN STAGE 2-3-4: L3BLAS TUNE at 16:50
+   DONE  STAGE 2-3-4 at 16:50
+
+
+   BEGIN STAGE 2-3-5: GEMV TUNE at 16:50
+      gemvN : main kernel 900002:zmvn_sse.c written by R. Clint Whaley
+            mu=4, nu=4, using 13312 Cache Elements
+              Performance = 3069.48 (37.42 of copy matmul, 113.68 of clock)
+      gemvT : main kernel 900002:zmvt_sse.c written by R. Clint Whaley
+            mu=4, nu=4, using 12288 Cache Elements
+              Performance = 3683.50 (44.91 of copy matmul, 136.43 of clock)
+   DONE  STAGE 2-3-5 at 16:50
+
+
+   BEGIN STAGE 2-3-6: GER TUNE at 16:50
+      ger : main kernel 900002:zr1_sse.c written by R. Clint Whaley
+            mu=4, nu=1, using 16384 Cache Elements
+              Performance = 2045.01 (24.93 of copy matmul, 75.74 of clock)
+   DONE  STAGE 2-3-6 at 16:51
+DONE  STAGE 2-0-0 at 16:51
+
+
+BEGIN STAGE 2-4-0: TUNING PREC='c' (precision 4 of 4) at 16:51
+
+
+   BEGIN STAGE 2-4-1: BUILDING BLOCK MATMUL TUNE at 16:51
+      The best matmul kernel was CASES/ATL_smm4x2x256_avx.c, NB=72, written by R. Clint Whaley
+      Performance: 13769.31MFLOPS (509.97 percent of of detected clock rate)
+        (Gen case got 5256.53MFLOPS)
+      mmNN   : ma=0, lat=1, nb=40, mu=2, nu=5 ku=40, ff=0, if=3, nf=3
+               Performance = 6624.33 (48.11 of copy matmul, 245.35 of clock)
+      mmNT   : ma=0, lat=1, nb=40, mu=2, nu=5 ku=40, ff=0, if=3, nf=3
+               Performance = 6596.26 (47.91 of copy matmul, 244.31 of clock)
+      mmTN   : ma=0, lat=1, nb=40, mu=2, nu=5 ku=40, ff=0, if=3, nf=3
+               Performance = 4834.52 (35.11 of copy matmul, 179.06 of clock)
+      mmTT   : ma=0, lat=1, nb=40, mu=2, nu=5 ku=40, ff=0, if=3, nf=3
+               Performance = 5896.65 (42.82 of copy matmul, 218.39 of clock)
+
+   DONE  STAGE 2-4-1 at 16:52
+
+
+   BEGIN STAGE 2-4-2: CacheEdge DETECTION at 16:52
+      CacheEdge set to 2097152 bytes
+      csNKB set to 0 bytes
+   DONE  STAGE 2-4-2 at 16:52
+
+
+   BEGIN STAGE 2-4-3: SMALL/LARGE CROSSOVER at 16:52
+
+
+   STAGE 2-4-3: COPY/NO-COPY CROSSOVER DETECTION
+      done.
+   DONE  STAGE 2-4-3 at 16:52
+
+
+   BEGIN STAGE 2-4-4: L3BLAS TUNE at 16:52
+   DONE  STAGE 2-4-4 at 16:52
+
+
+   BEGIN STAGE 2-4-5: GEMV TUNE at 16:52
+      gemvN : main kernel 900002:cmvn_sse.c written by R. Clint Whaley
+            mu=8, nu=2, using 24576 Cache Elements
+              Performance = 12275.36 (89.15 of copy matmul, 454.64 of clock)
+      gemvT : main kernel 900007:cmvt_sse.c written by R. Clint Whaley
+            mu=8, nu=4, using 0 Cache Elements
+              Performance = 18406.90 (133.68 of copy matmul, 681.74 of clock)
+   DONE  STAGE 2-4-5 at 16:53
+
+
+   BEGIN STAGE 2-4-6: GER TUNE at 16:53
+      ger : main kernel 900002:cr1_sse.c written by R. Clint Whaley
+            mu=8, nu=1, using 14336 Cache Elements
+              Performance = 4090.02 (29.70 of copy matmul, 151.48 of clock)
+   DONE  STAGE 2-4-6 at 16:53
+DONE  STAGE 2-0-0 at 16:53
+DONE  STAGE 2-0-0 at 16:53
+
+
+BEGIN STAGE 3-0-0: GENERAL LIBRARY BUILD at 16:53
+DONE  STAGE 3-0-0 at 16:54
+
+
+BEGIN STAGE 4-0-0: POST-BUILD TUNING at 16:54
+
+
+   BEGIN STAGE 4-1-1: TRSM TUNE at 16:54
+   DONE  STAGE 4-1-0 at 16:54
+
+
+   BEGIN STAGE 4-2-0: THREADING TUNE at 16:54
+   DONE  STAGE 4-2-0 at 16:55
+
+
+   BEGIN STAGE 4-2-1: THREADING BUILD at 16:55
+   DONE  STAGE 4-2-1 at 16:55
+
+
+   BEGIN STAGE 4-3-0: LAPACK TUNING at 16:55
+
+
+      BEGIN STAGE 4-3-1: dLAPACK TUNING at 16:55
+      DONE  STAGE 4-3-1 at 16:55
+
+
+      BEGIN STAGE 4-3-2: sLAPACK TUNING at 16:55
+      DONE  STAGE 4-3-2 at 16:55
+
+
+      BEGIN STAGE 4-3-3: zLAPACK TUNING at 16:55
+      DONE  STAGE 4-3-3 at 16:55
+
+
+      BEGIN STAGE 4-3-4: cLAPACK TUNING at 16:55
+      DONE  STAGE 4-3-4 at 16:55
+   DONE  STAGE 4-3-0 at 16:55
+DONE  STAGE 4-0-0 at 16:55
+
+
+BEGIN STAGE 5-0-0: FINAL LIBRARY UPDATE at 16:55
+
+
+   BEGIN STAGE 5-1-0: FINAL STATIC LIBRARY UPDATE at 16:55
+   DONE  STAGE 5-1-0 at 16:55
+
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+*      FINISHED ATLAS3.10.2 INSTALL OF SECTION 0-0-0 ON 09/28/2014 AT 16:55   *
+*******************************************************************************
+*******************************************************************************
+*******************************************************************************
+
+
+
